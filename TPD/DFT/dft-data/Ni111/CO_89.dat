@@ -1,5 +1,6 @@
 name = '*CO_89'
 composition = {'H':0, 'C':1, 'N':0, 'O':1, 'Pt':1}
+facet = ['Ni111'] 
 coverage = 8
 DFT_energy = [-179.583991, 'eV']
 ZPE_energy = [1.877, 'eV']
