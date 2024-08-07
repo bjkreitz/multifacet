@@ -1,0 +1,10 @@
+name = 'O100_19'
+composition = {'H':0, 'C':0, 'N':0, 'O':1, 'Pt':1}
+DFT_energy = [-185.920888, 'eV']
+ZPE_energy = [0.06, 'eV']
+frequencies = [254.4, 365.7, 438.6, 'cm-1']
+gas_DFT_energy = [-8.449915, 'eV']
+gas_ZPE_energy = [0.099, 'eV']
+sites = 1
+BEE = []
+gas_BEE = []

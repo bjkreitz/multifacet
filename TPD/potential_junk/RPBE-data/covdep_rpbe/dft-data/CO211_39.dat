@@ -1,0 +1,10 @@
+name = 'CO211_19'
+composition = {'H':0, 'C':1, 'N':0, 'O':1, 'Pt':1}
+DFT_energy = [-198.045483, 'eV']
+ZPE_energy = [0.186, 'eV']
+frequencies = [36.1, 186.7, 311.7, 352.3, 418.4, 1853.6, 'cm-1']
+gas_DFT_energy = [-14.422052, 'eV']
+gas_ZPE_energy = [0.131, 'eV']
+sites = 1
+BEE = []
+gas_BEE = []

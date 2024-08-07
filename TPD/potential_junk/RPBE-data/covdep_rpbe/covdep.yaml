@@ -1,0 +1,58 @@
+
+  coverage-dependencies:
+    O(111): {model: Polynomial,
+            enthalpy-1st-order: 0.38867803,
+            enthalpy-2nd-order: 1.2260826,
+            enthalpy-unit: eV
+           }
+
+  coverage-dependencies:
+    OC(111): {model: Polynomial,
+            enthalpy-1st-order:-0.95599009,
+            enthalpy-2nd-order: 2.6371953,
+            enthalpy-unit: eV
+           }
+
+  coverage-dependencies:
+    O(211): {model: Polynomial,
+            enthalpy-1st-order: 0.68278903,
+            enthalpy-2nd-order: 0.94226941,
+            enthalpy-unit: eV
+           }
+
+  coverage-dependencies:
+    OC(211): {model: Polynomial,
+            enthalpy-1st-order:-0.41158878,
+            enthalpy-2nd-order: 1.619729,
+            enthalpy-unit: eV
+           }
+
+  coverage-dependencies:
+    O(100): {model: Polynomial,
+            enthalpy-1st-order:0.07538997,
+            enthalpy-2nd-order: 1.72805287,
+            enthalpy-unit: eV
+           }
+
+  coverage-dependencies:
+    OC(100): {model: Polynomial,
+            enthalpy-1st-order: -0.58599734,
+            enthalpy-2nd-order: 1.4450527,
+            enthalpy-unit: eV
+           }
+
+
+  coverage-dependencies:
+    O(110): {model: Polynomial,
+            enthalpy-1st-order: -0.06783788,
+            enthalpy-2nd-order: 0.82834928,
+            enthalpy-unit: eV
+           }
+
+  coverage-dependencies:
+    OC(110): {model: Polynomial,
+            enthalpy-1st-order: 0.03120457,
+            enthalpy-2nd-order: 0.16819107,
+            enthalpy-unit: eV
+           }
+

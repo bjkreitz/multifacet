@@ -1,0 +1,203 @@
+
+ *O_19 *O_29 *O_39 *O_49 *O_59
+ *O_69 *O_79 *O_89 *O_99
+
+
+
+species(name = "*O_19",
+	atoms = " O:1 Pt:1",
+	size = 1,
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(coeffs=[-4.78747656E-01, 1.51163103E-02, -2.72714811E-05, 2.27788220E-08, -7.24231092E-12, -3.07613711E+04, 5.96105856E-01], Tmin=(298.0, 'K'), Tmax=(1000.0, 'K')), 
+            NASAPolynomial(coeffs=[2.89482689E+00, -3.67789499E-04, 6.97988290E-07, -3.97248483E-10, 7.48154293E-14, -3.13854598E+04, -1.53122812E+01], Tmin=(1000.0, 'K'), Tmax=(2000.0, 'K')), 
+        ],
+        Tmin = (298.0,'K'),
+        Tmax = (2000.0,'K'),
+    ),
+    longDesc = u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (file: ThermoPt111.py).
+            Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
+            using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
+            following the procedure outlined by Blondal et al (DOI:10.1021/acs.iecr.9b01464). The following settings were applied:
+            kpoints=(5x5x1), 4 layers (2 bottom layers fixed), ecutwfc=60 Ry, smearing='mazari-vanderbilt', mixing_mode='local-TF',
+            fmax=2.5e-2. DFT binding energy: -5.318 eV.
+""",
+    metal = "Pt",
+    facet = "111",
+)
+
+species(name = "*O_29",
+	atoms = " O:1 Pt:1",
+	size = 1,
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(coeffs=[-4.77184672E-01, 1.51110079E-02, -2.72637104E-05, 2.27733794E-08, -7.24082079E-12, -3.02457054E+04, 5.89242344E-01], Tmin=(298.0, 'K'), Tmax=(1000.0, 'K')), 
+            NASAPolynomial(coeffs=[2.89490901E+00, -3.67479691E-04, 6.97408951E-07, -3.96920787E-10, 7.47539509E-14, -3.08694683E+04, -1.53118879E+01], Tmin=(1000.0, 'K'), Tmax=(2000.0, 'K')), 
+        ],
+        Tmin = (298.0,'K'),
+        Tmax = (2000.0,'K'),
+    ),
+    longDesc = u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (file: ThermoPt111.py).
+            Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
+            using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
+            following the procedure outlined by Blondal et al (DOI:10.1021/acs.iecr.9b01464). The following settings were applied:
+            kpoints=(5x5x1), 4 layers (2 bottom layers fixed), ecutwfc=60 Ry, smearing='mazari-vanderbilt', mixing_mode='local-TF',
+            fmax=2.5e-2. DFT binding energy: -5.273 eV.
+""",
+    metal = "Pt",
+    facet = "111",
+)
+
+species(name = "*O_39",
+	atoms = " O:1 Pt:1",
+	size = 1,
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(coeffs=[-4.64046984E-01, 1.50508138E-02, -2.71516665E-05, 2.26779173E-08, -7.21006241E-12, -2.95270576E+04, 5.35793784E-01], Tmin=(298.0, 'K'), Tmax=(1000.0, 'K')), 
+            NASAPolynomial(coeffs=[2.89522359E+00, -3.66437828E-04, 6.95407623E-07, -3.95775769E-10, 7.45375850E-14, -3.01485572E+04, -1.53054297E+01], Tmin=(1000.0, 'K'), Tmax=(2000.0, 'K')), 
+        ],
+        Tmin = (298.0,'K'),
+        Tmax = (2000.0,'K'),
+    ),
+    longDesc = u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (file: ThermoPt111.py).
+            Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
+            using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
+            following the procedure outlined by Blondal et al (DOI:10.1021/acs.iecr.9b01464). The following settings were applied:
+            kpoints=(5x5x1), 4 layers (2 bottom layers fixed), ecutwfc=60 Ry, smearing='mazari-vanderbilt', mixing_mode='local-TF',
+            fmax=2.5e-2. DFT binding energy: -5.211 eV.
+""",
+    metal = "Pt",
+    facet = "111",
+)
+
+species(name = "*O_49",
+	atoms = " O:1 Pt:1",
+	size = 1,
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(coeffs=[-6.66747575E-01, 1.57579623E-02, -2.82156017E-05, 2.34418116E-08, -7.42395381E-12, -2.60099709E+04, 1.43730076E+00], Tmin=(298.0, 'K'), Tmax=(1000.0, 'K')), 
+            NASAPolynomial(coeffs=[2.88547989E+00, -4.04848452E-04, 7.66907087E-07, -4.36184605E-10, 8.21167923E-14, -2.66733443E+04, -1.53462465E+01], Tmin=(1000.0, 'K'), Tmax=(2000.0, 'K')), 
+        ],
+        Tmin = (298.0,'K'),
+        Tmax = (2000.0,'K'),
+    ),
+    longDesc = u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (file: ThermoPt111.py).
+            Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
+            using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
+            following the procedure outlined by Blondal et al (DOI:10.1021/acs.iecr.9b01464). The following settings were applied:
+            kpoints=(5x5x1), 4 layers (2 bottom layers fixed), ecutwfc=60 Ry, smearing='mazari-vanderbilt', mixing_mode='local-TF',
+            fmax=2.5e-2. DFT binding energy: -4.910 eV.
+""",
+    metal = "Pt",
+    facet = "111",
+)
+
+species(name = "*O_59",
+	atoms = " O:1 Pt:1",
+	size = 1,
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(coeffs=[-6.36389505E-01, 1.52766527E-02, -2.69341744E-05, 2.21339947E-08, -6.95401202E-12, -2.34445847E+04, 1.43497753E+00], Tmin=(298.0, 'K'), Tmax=(1000.0, 'K')), 
+            NASAPolynomial(coeffs=[2.87850001E+00, -4.37597565E-04, 8.26184829E-07, -4.69298695E-10, 8.82827883E-14, -2.41134378E+04, -1.52370911E+01], Tmin=(1000.0, 'K'), Tmax=(2000.0, 'K')), 
+        ],
+        Tmin = (298.0,'K'),
+        Tmax = (2000.0,'K'),
+    ),
+    longDesc = u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (file: ThermoPt111.py).
+            Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
+            using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
+            following the procedure outlined by Blondal et al (DOI:10.1021/acs.iecr.9b01464). The following settings were applied:
+            kpoints=(5x5x1), 4 layers (2 bottom layers fixed), ecutwfc=60 Ry, smearing='mazari-vanderbilt', mixing_mode='local-TF',
+            fmax=2.5e-2. DFT binding energy: -4.690 eV.
+""",
+    metal = "Pt",
+    facet = "111",
+)
+
+species(name = "*O_69",
+	atoms = " O:1 Pt:1",
+	size = 1,
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(coeffs=[-9.55587587E-01, 1.66953283E-02, -2.95245747E-05, 2.43124848E-08, -7.64947133E-12, -2.09674161E+04, 2.72848497E+00], Tmin=(298.0, 'K'), Tmax=(1000.0, 'K')), 
+            NASAPolynomial(coeffs=[2.86989294E+00, -4.67236260E-04, 8.82697842E-07, -5.01539878E-10, 9.43647785E-14, -2.16926330E+04, -1.54026876E+01], Tmin=(1000.0, 'K'), Tmax=(2000.0, 'K')), 
+        ],
+        Tmin = (298.0,'K'),
+        Tmax = (2000.0,'K'),
+    ),
+    longDesc = u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (file: ThermoPt111.py).
+            Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
+            using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
+            following the procedure outlined by Blondal et al (DOI:10.1021/acs.iecr.9b01464). The following settings were applied:
+            kpoints=(5x5x1), 4 layers (2 bottom layers fixed), ecutwfc=60 Ry, smearing='mazari-vanderbilt', mixing_mode='local-TF',
+            fmax=2.5e-2. DFT binding energy: -4.478 eV.
+""",
+    metal = "Pt",
+    facet = "111",
+)
+
+species(name = "*O_79",
+	atoms = " O:1 Pt:1",
+	size = 1,
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(coeffs=[-1.07995087E+00, 1.71568891E-02, -3.02607302E-05, 2.48703294E-08, -7.81355883E-12, -1.85217244E+04, 3.26965224E+00], Tmin=(298.0, 'K'), Tmax=(1000.0, 'K')), 
+            NASAPolynomial(coeffs=[2.86449777E+00, -4.88027841E-04, 9.21537367E-07, -5.23519121E-10, 9.84904422E-14, -1.92717515E+04, -1.54372466E+01], Tmin=(1000.0, 'K'), Tmax=(2000.0, 'K')), 
+        ],
+        Tmin = (298.0,'K'),
+        Tmax = (2000.0,'K'),
+    ),
+    longDesc = u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (file: ThermoPt111.py).
+            Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
+            using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
+            following the procedure outlined by Blondal et al (DOI:10.1021/acs.iecr.9b01464). The following settings were applied:
+            kpoints=(5x5x1), 4 layers (2 bottom layers fixed), ecutwfc=60 Ry, smearing='mazari-vanderbilt', mixing_mode='local-TF',
+            fmax=2.5e-2. DFT binding energy: -4.269 eV.
+""",
+    metal = "Pt",
+    facet = "111",
+)
+
+species(name = "*O_89",
+	atoms = " O:1 Pt:1",
+	size = 1,
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(coeffs=[-1.06234079E+00, 1.72120314E-02, -3.05154065E-05, 2.51720555E-08, -7.92973326E-12, -1.58174118E+04, 3.16176611E+00], Tmin=(298.0, 'K'), Tmax=(1000.0, 'K')), 
+            NASAPolynomial(coeffs=[2.86803847E+00, -4.72564601E-04, 8.93264474E-07, -5.07662921E-10, 9.55308860E-14, -1.65601733E+04, -1.54544814E+01], Tmin=(1000.0, 'K'), Tmax=(2000.0, 'K')), 
+        ],
+        Tmin = (298.0,'K'),
+        Tmax = (2000.0,'K'),
+    ),
+    longDesc = u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (file: ThermoPt111.py).
+            Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
+            using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
+            following the procedure outlined by Blondal et al (DOI:10.1021/acs.iecr.9b01464). The following settings were applied:
+            kpoints=(5x5x1), 4 layers (2 bottom layers fixed), ecutwfc=60 Ry, smearing='mazari-vanderbilt', mixing_mode='local-TF',
+            fmax=2.5e-2. DFT binding energy: -4.035 eV.
+""",
+    metal = "Pt",
+    facet = "111",
+)
+
+species(name = "*O_99",
+	atoms = " O:1 Pt:1",
+	size = 1,
+    thermo = NASA(
+        polynomials = [
+            NASAPolynomial(coeffs=[-3.56372840E-01, 1.46877005E-02, -2.66241129E-05, 2.23122734E-08, -7.11121093E-12, -1.31897298E+04, 5.32518138E-02], Tmin=(298.0, 'K'), Tmax=(1000.0, 'K')), 
+            NASAPolynomial(coeffs=[2.90066815E+00, -3.44769560E-04, 6.55133741E-07, -3.73027407E-10, 7.02722823E-14, -1.37885895E+04, -1.52863474E+01], Tmin=(1000.0, 'K'), Tmax=(2000.0, 'K')), 
+        ],
+        Tmin = (298.0,'K'),
+        Tmax = (2000.0,'K'),
+    ),
+    longDesc = u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (file: ThermoPt111.py).
+            Based on DFT calculations by Bjarne Kreitz from Brown University. DFT calculations were performed with Quantum Espresso
+            using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
+            following the procedure outlined by Blondal et al (DOI:10.1021/acs.iecr.9b01464). The following settings were applied:
+            kpoints=(5x5x1), 4 layers (2 bottom layers fixed), ecutwfc=60 Ry, smearing='mazari-vanderbilt', mixing_mode='local-TF',
+            fmax=2.5e-2. DFT binding energy: -3.802 eV.
+""",
+    metal = "Pt",
+    facet = "111",
+)

@@ -1,0 +1,11 @@
+name = '*O_19'
+composition = {'H':0, 'C':0, 'N':0, 'O':1, 'Pt':1}
+coverage = 1
+DFT_energy = [-83.848, 'eV']
+ZPE_energy = [0.07, 'eV']
+frequencies = [93.3, 482.6, 548.8, 'cm-1']
+gas_DFT_energy = [-5.484344, 'eV']
+gas_ZPE_energy = [0.099, 'eV']
+sites = 1
+BEE = []
+gas_BEE = []

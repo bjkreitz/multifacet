@@ -1,0 +1,11 @@
+name = '*CO_29'
+composition = {'H':0, 'C':1, 'N':0, 'O':1, 'Pt':1}
+coverage = 2
+DFT_energy = [-103.140, 'eV']
+ZPE_energy = [0.332, 'eV']
+frequencies = [130.6, 140.5, 144.5, 146.3, 217.9, 246.5, 253.7, 257.2, 260.7, 266.6, 1632.7, 1658.0, 'cm-1']
+gas_DFT_energy = [-12.06623, 'eV']
+gas_ZPE_energy = [0.133, 'eV']
+sites = 1
+BEE = []
+gas_BEE = []

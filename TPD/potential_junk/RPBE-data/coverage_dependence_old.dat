@@ -1,0 +1,46 @@
+  coverage-dependencies:
+    OX(111): {model: polynomial,
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [0.38867803, 1.2260826, 0.0, 0.0]
+            }
+
+  coverage-dependencies:
+    CO(111): {model: polynomial,
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [-0.95599009, 2.6371953, 0.0, 0.0]
+           }
+           
+  coverage-dependencies:
+    OX(100): {model: polynomial,
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [0.07538997, 1.72805287, 0.0, 0.0]
+            }
+
+  coverage-dependencies:
+    CO(100): {model: polynomial,
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [-0.58599734, 1.4450527, 0.0, 0.0]
+           }
+           
+  coverage-dependencies:
+    OX(110): {model: polynomial,
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [-0.06783788, 0.82834928, 0.0, 0.0]
+            }
+
+  coverage-dependencies:
+    CO(110): {model: polynomial,
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [0.03120457, 0.16819107, 0.0, 0.0]
+           }
+  coverage-dependencies:
+    OX(211): {model: polynomial,
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [0.68278903, 0.94226941, 0.0, 0.0]
+            }
+
+  coverage-dependencies:
+    CO(211): {model: polynomial,
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [-0.41158878, 1.619729, 0.0, 0.0]
+           }

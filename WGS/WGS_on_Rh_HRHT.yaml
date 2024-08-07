@@ -1,0 +1,2692 @@
+description: |-
+  ###############################################################################
+   Raffaele Cheula, LCCP, Politecnico di Milano, raffaele.cheula@polimi.it
+  ###############################################################################
+
+generator: cti2yaml
+cantera-version: 3.1.0a2
+date: Mon, 22 Jul 2024 10:55:42 -0400
+input-files: [WGS_on_Rh_HRHT.cti]
+    
+phases:
+- name: gas
+  thermo: ideal-gas
+  elements: [C, O, H, N]
+  species: [H2, H2O, CO, CO2, O2, CH4, N2]
+  kinetics: gas
+  reactions: none
+  transport: mixture-averaged
+  state:
+    T: 773.15
+    P: 1.01325e+05
+- name: Rh100
+  thermo: ideal-surface
+  elements: [C, O, H, N, Rh]
+  species: [Rh(100), H(100), CO(100), OH(100), O(100), CO2(100), H2O(100),
+    tCOOH(100), cCOOH(100), HCOO(100), C(100), CH(100), CH2(100), CH3(100),
+    OCH(100)]
+  kinetics: surface
+  reactions: [Rh100-reactions]
+  state:
+    T: 773.15
+    P: 1.01325e+05
+  adjacent-phases: [gas]
+  site-density: 2.2239e-08
+- name: Rh100-TS
+  thermo: ideal-surface
+  elements: [C, O, H, N, Rh]
+  species: [Rh100-1, Rh100-2, Rh100-3, Rh100-4, Rh100-5, Rh100-6, Rh100-7,
+    Rh100-8, Rh100-9, Rh100-10, Rh100-11, Rh100-12, Rh100-13, Rh100-14,
+    Rh100-15, Rh100-16, Rh100-17, Rh100-18, Rh100-19, Rh100-20, Rh100-21,
+    Rh100-22, Rh100-23]
+  kinetics: surface
+  reactions: none
+  adjacent-phases: [gas]
+  site-density: 2.2239e-08
+- name: Rh110
+  thermo: ideal-surface
+  elements: [C, O, H, N, Rh]
+  species: [Rh(110), H(110), CO(110), OH(110), O(110), CO2(110), H2O(110),
+    tCOOH(110), cCOOH(110), HCOO(110), C(110), CH(110), CH2(110), CH3(110),
+    OCH(110)]
+  kinetics: surface
+  reactions: [Rh110-reactions]
+  state:
+    T: 773.15
+    P: 1.01325e+05
+  adjacent-phases: [gas]
+  site-density: 1.5726e-08
+- name: Rh110-TS
+  thermo: ideal-surface
+  elements: [C, O, H, N, Rh]
+  species: [Rh110-1, Rh110-2, Rh110-3, Rh110-4, Rh110-5, Rh110-6, Rh110-7,
+    Rh110-8, Rh110-9, Rh110-10, Rh110-11, Rh110-12, Rh110-13, Rh110-14,
+    Rh110-15, Rh110-16, Rh110-17, Rh110-18, Rh110-19, Rh110-20, Rh110-21,
+    Rh110-22, Rh110-23]
+  kinetics: surface
+  reactions: none
+  adjacent-phases: [gas]
+  site-density: 1.5726e-08
+- name: Rh111
+  thermo: ideal-surface
+  elements: [C, O, H, N, Rh]
+  species: [Rh(111), H(111), CO(111), OH(111), O(111), CO2(111), H2O(111),
+    tCOOH(111), cCOOH(111), HCOO(111), C(111), CH(111), CH2(111), CH3(111),
+    OCH(111)]
+  kinetics: surface
+  reactions: [Rh111-reactions]
+  state:
+    T: 773.15
+    P: 1.01325e+05
+  adjacent-phases: [gas]
+  site-density: 2.568e-08
+- name: Rh111-TS
+  thermo: ideal-surface
+  elements: [C, O, H, N, Rh]
+  species: [Rh111-1, Rh111-2, Rh111-3, Rh111-4, Rh111-5, Rh111-6, Rh111-7,
+    Rh111-8, Rh111-9, Rh111-10, Rh111-11, Rh111-12, Rh111-13, Rh111-14,
+    Rh111-15, Rh111-16, Rh111-17, Rh111-18, Rh111-19, Rh111-20, Rh111-21,
+    Rh111-22, Rh111-23]
+  kinetics: surface
+  reactions: none
+  adjacent-phases: [gas]
+  site-density: 2.568e-08
+- name: Rh211
+  thermo: ideal-surface
+  elements: [C, O, H, N, Rh]
+  species: [Rh(211), H(211), CO(211), OH(211), O(211), CO2(211), H2O(211),
+    tCOOH(211), cCOOH(211), HCOO(211), C(211), CH(211), CH2(211), CH3(211),
+    OCH(211)]
+  kinetics: surface
+  reactions: [Rh211-reactions]
+  state:
+    T: 773.15
+    P: 1.01325e+05
+  adjacent-phases: [gas]
+  site-density: 9.079e-09
+- name: Rh211-TS
+  thermo: ideal-surface
+  elements: [C, O, H, N, Rh]
+  species: [Rh211-1, Rh211-2, Rh211-3, Rh211-4, Rh211-5, Rh211-6, Rh211-7,
+    Rh211-8, Rh211-9, Rh211-10, Rh211-11, Rh211-12, Rh211-13, Rh211-14,
+    Rh211-15, Rh211-16, Rh211-17, Rh211-18, Rh211-19, Rh211-20, Rh211-21,
+    Rh211-22, Rh211-23]
+  kinetics: surface
+  reactions: none
+  adjacent-phases: [gas]
+  site-density: 9.079e-09
+- name: Rh311
+  thermo: ideal-surface
+  elements: [C, O, H, N, Rh]
+  species: [Rh(311), H(311), CO(311), OH(311), O(311), CO2(311), H2O(311),
+    tCOOH(311), cCOOH(311), HCOO(311), C(311), CH(311), CH2(311), CH3(311),
+    OCH(311)]
+  kinetics: surface
+  reactions: [Rh311-reactions]
+  state:
+    T: 773.15
+    P: 1.01325e+05
+  adjacent-phases: [gas]
+  site-density: 1.3411e-08
+- name: Rh311-TS
+  thermo: ideal-surface
+  elements: [C, O, H, N, Rh]
+  species: [Rh311-1, Rh311-2, Rh311-3, Rh311-4, Rh311-5, Rh311-6, Rh311-7,
+    Rh311-8, Rh311-9, Rh311-10, Rh311-11, Rh311-12, Rh311-13, Rh311-14,
+    Rh311-15, Rh311-16, Rh311-17, Rh311-18, Rh311-19, Rh311-20, Rh311-21,
+    Rh311-22, Rh311-23]
+  kinetics: surface
+  reactions: none
+  adjacent-phases: [gas]
+  site-density: 1.3411e-08
+- name: Rh331
+  thermo: ideal-surface
+  elements: [C, O, H, N, Rh]
+  species: [Rh(331), H(331), CO(331), OH(331), O(331), CO2(331), H2O(331),
+    tCOOH(331), cCOOH(331), HCOO(331), C(331), CH(331), CH2(331), CH3(331),
+    OCH(331)]
+  kinetics: surface
+  reactions: [Rh331-reactions]
+  state:
+    T: 773.15
+    P: 1.01325e+05
+  adjacent-phases: [gas]
+  site-density: 1.0205e-08
+- name: Rh331-TS
+  thermo: ideal-surface
+  elements: [C, O, H, N, Rh]
+  species: [Rh331-1, Rh331-2, Rh331-3, Rh331-4, Rh331-5, Rh331-6, Rh331-7,
+    Rh331-8, Rh331-9, Rh331-10, Rh331-11, Rh331-12, Rh331-13, Rh331-14,
+    Rh331-15, Rh331-16, Rh331-17, Rh331-18, Rh331-19, Rh331-20, Rh331-21,
+    Rh331-22, Rh331-23]
+  kinetics: surface
+  reactions: none
+  adjacent-phases: [gas]
+  site-density: 1.0205e-08
+  
+# Edges
+- name: edge111-311
+  thermo: edge
+  adjacent-phases: [gas, Rh111, Rh311]
+  elements: [C, O, H, N, Rh]
+  species: [(tpb)]
+  kinetics: edge
+  reactions: [edge111-311-reactions]
+  state:
+    T: 773.15
+    P: 1.01325e+05
+    coverages: {(tpb): 1.0}
+  site-density: 1e-09 
+  
+- name: edge111-331
+  thermo: edge
+  adjacent-phases: [gas, Rh111, Rh331]
+  elements: [C, O, H, N, Rh]
+  species: [(tpb)]
+  kinetics: edge
+  reactions: [edge111-331-reactions]
+  state:
+    T: 773.15
+    P: 1.01325e+05
+    coverages: {(tpb): 1.0}
+  site-density: 1e-09 
+
+- name: edge110-331
+  thermo: edge
+  adjacent-phases: [gas, Rh110, Rh331]
+  elements: [C, O, H, N, Rh]
+  species: [(tpb)]
+  kinetics: edge
+  reactions: [edge110-331-reactions]
+  state:
+    T: 773.15
+    P: 1.01325e+05
+    coverages: {(tpb): 1.0}
+  site-density: 1e-09 
+  
+- name: edge100-311
+  thermo: edge
+  adjacent-phases: [gas, Rh100, Rh311]
+  elements: [C, O, H, N, Rh]
+  species: [(tpb)]
+  kinetics: edge
+  reactions: [edge100-311-reactions]
+  state:
+    T: 773.15
+    P: 1.01325e+05
+    coverages: {(tpb): 1.0}
+  site-density: 1e-09 
+  
+species:
+- name: (tpb)
+  composition: {}
+  thermo:
+    model: constant-cp
+  note: dummy species
+- name: H2
+  composition: {H: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [300.0, 1000.0, 5000.0]
+    data:
+    - [3.298124, 8.2494412e-04, -8.1430147e-07, -9.4754343e-11, 4.134872e-13,
+      0.0, -3.294094]
+    - [2.9914222, 7.0006441e-04, -5.633828e-08, -9.2315782e-12, 1.582752e-15,
+      177.48745399999996, -1.35510641]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 2.92
+    well-depth: 38.0
+    polarizability: 0.79
+    rotational-relaxation: 280.0
+- name: H2O
+  composition: {H: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [4.19864056, -2.0364341e-03, 6.52040211e-06, -5.48797062e-09, 1.77197817e-12,
+      -2.8778581199999997e+04, -0.849032208]
+    - [3.03399249, 2.17691804e-03, -1.64072518e-07, -9.7041987e-11, 1.68200992e-14,
+      -2.8489151599999997e+04, 4.9667701]
+  transport:
+    model: gas
+    geometry: nonlinear
+    diameter: 2.605
+    well-depth: 572.4
+    dipole: 1.844
+    rotational-relaxation: 4.0
+- name: CO
+  composition: {C: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [3.57953347, -6.1035368e-04, 1.01681433e-06, 9.07005884e-10, -9.04424499e-13,
+      1.1368683772161603e-13, 3.50840928]
+    - [2.71518561, 2.06252743e-03, -9.98825771e-07, 2.30053008e-10, -2.03647716e-14,
+      192.21359999999925, 7.81868772]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.65
+    well-depth: 98.1
+    polarizability: 1.95
+    rotational-relaxation: 1.8
+- name: CO2
+  composition: {C: 1, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [2.35677352, 8.98459677e-03, -7.12356269e-06, 2.45919022e-09, -1.43699548e-13,
+      -3.35252592e+04, 9.90105222]
+    - [3.85746029, 4.41437026e-03, -2.21481404e-06, 5.23490188e-10, -4.72084164e-14,
+      -3.39124555e+04, 2.27163806]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.763
+    well-depth: 244.0
+    polarizability: 2.65
+    rotational-relaxation: 2.1
+- name: CH4
+  composition: {H: 4, C: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [5.14987613, -0.0136709788, 4.91800599e-05, -4.84743026e-08, 1.66693956e-11,
+      5619.855899999999, -4.64130376]
+    - [0.074851495, 0.0133909467, -5.73285809e-06, 1.22292535e-09, -1.0181523e-13,
+      6398.158909999998, 18.437318]
+  transport:
+    model: gas
+    geometry: nonlinear
+    diameter: 3.746
+    well-depth: 141.4
+    polarizability: 2.6
+    rotational-relaxation: 13.0
+- name: O2
+  composition: {O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [300.0, 1000.0, 5000.0]
+    data:
+    - [3.212936, 1.1274861e-03, -5.7561499e-07, 1.313877e-09, -8.7685539e-13,
+      0.0, 6.034739]
+    - [3.69757685, 6.1351969e-04, -1.258842e-07, 1.775281e-11, -1.136435e-15,
+      -228.68066, 3.18917125]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.458
+    well-depth: 107.4
+    polarizability: 1.6
+    rotational-relaxation: 3.8
+- name: N2
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [300.0, 1000.0, 5000.0]
+    data:
+    - [3.298677, 1.4082399e-03, -3.9632218e-06, 5.6415148e-09, -2.444854e-12,
+      0.0, 3.950372]
+    - [2.92663788, 1.487977e-03, -5.6847603e-07, 1.009704e-10, -6.7533509e-15,
+      98.10461599999996, 5.98054018]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.621
+    well-depth: 97.53
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+- name: CH3OH
+  composition: {C: 1, H: 4, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 3500.0]
+    data:
+    - [1.78970791, 0.0140938292, -6.36500835e-06, 1.38171085e-09, -1.1706022e-13,
+      -9005.746700000002, 14.5023623]
+    - [5.71539582, -0.0152309129, 6.52441155e-05, -7.10806889e-08, 2.61352698e-11,
+      -9273.6376, -1.50409823]
+  transport:
+    model: gas
+    geometry: nonlinear
+    diameter: 3.626
+    well-depth: 481.8
+    rotational-relaxation: 1.0
+- name: Rh(100)
+  composition: {Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [300.0, 1500.0]
+    data:
+    - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+- name: H(100)
+  composition: {H: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.54007297, 0.0139511284, -2.16399062e-05, 1.48238119e-08, -3.72866209e-12,
+      -6551.02773, 6.83335698]
+- name: CO(100)
+  composition: {C: 1, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.30841242, 0.0186209068, -3.15300004e-05, 2.24595919e-08, -5.76695177e-12,
+      -1.90756509e+04, -5.56464643]
+- name: OH(100)
+  composition: {H: 1, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.51528534, 0.0261517803, -3.87082641e-05, 2.50435118e-08, -5.9823477e-12,
+      -3.08237708e+04, 5.69675968]
+- name: O(100)
+  composition: {Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [5.00911093e-03, 0.0168803427, -3.02573914e-05, 2.1482734e-08, -5.43140333e-12,
+      -2.60004404e+04, 0.248750358]
+- name: CO2(100)
+  composition: {C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [2.71622314, 0.0199220622, -3.08638992e-05, 2.1349793e-08, -5.43388444e-12,
+      -3.71843954e+04, -10.4080906]
+- name: H2O(100)
+  composition: {H: 2, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.898119045, 0.0220450258, -3.58502589e-05, 2.55083978e-08, -6.53299989e-12,
+      -3.22172718e+04, -3.92539024]
+- name: tCOOH(100)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.875014421, 0.0405477559, -5.81945705e-05, 3.76573386e-08, -9.05826841e-12,
+      -4.20531834e+04, 3.1078928]
+- name: cCOOH(100)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.828617707, 0.0399042866, -5.57263662e-05, 3.51938851e-08, -8.30222303e-12,
+      -4.14126703e+04, 2.83158941]
+- name: HCOO(100)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.539203511, 0.0260515405, -2.68212437e-05, 1.29951045e-08, -2.44006743e-12,
+      -4.0208258e+04, -1.03590006]
+- name: C(100)
+  composition: {C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.4241845, 0.0216230716, -3.34872667e-05, 2.29705716e-08, -5.78371018e-12,
+      1.06475776e+04, 7.59297823]
+- name: CH(100)
+  composition: {H: 1, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.24717528, 0.0270506777, -4.03918692e-05, 2.78294748e-08, -7.076112e-12,
+      7804.91288, 7.15060768]
+- name: CH2(100)
+  composition: {H: 2, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.11439134, 0.0230339076, -3.20376481e-05, 2.19166065e-08, -5.61878725e-12,
+      1.34530364e+04, 3.80645412]
+- name: CH3(100)
+  composition: {H: 3, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.34510855, 0.030818099, -4.16203299e-05, 2.72215978e-08, -6.72305115e-12,
+      9735.10134, 2.9865399]
+- name: OCH(100)
+  composition: {H: 1, C: 1, Rh: 2, O: 1}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.17673286, 0.0286492038, -3.59474419e-05, 2.14845776e-08, -4.98582022e-12,
+      -1.53521585e+04, 3.59322666]
+- name: Rh(110)
+  composition: {Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [300.0, 1500.0]
+    data:
+    - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+- name: H(110)
+  composition: {H: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-3.12201459, 0.022416011, -3.35840751e-05, 2.17629075e-08, -5.19381523e-12,
+      -4007.04382, 11.6656037]
+- name: CO(110)
+  composition: {C: 1, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.327791699, 0.021694258, -3.45200501e-05, 2.3543639e-08, -5.86111519e-12,
+      -1.80454501e+04, -0.915633813]
+- name: OH(110)
+  composition: {H: 1, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.451446085, 0.0203718785, -2.84208601e-05, 1.8120243e-08, -4.37065301e-12,
+      -3.07129865e+04, 1.30909603]
+- name: O(110)
+  composition: {Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.639820378, 0.0151054298, -2.38787919e-05, 1.69176479e-08, -4.38419734e-12,
+      -2.43694302e+04, 1.51505403]
+- name: CO2(110)
+  composition: {C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.34763049, 0.0209752419, -2.40291085e-05, 1.31498233e-08, -2.86509233e-12,
+      -3.97282533e+04, -5.82779762]
+- name: H2O(110)
+  composition: {H: 2, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.941195034, 0.0206980665, -3.12615458e-05, 2.11220456e-08, -5.21503573e-12,
+      -3.32539686e+04, -4.26802712]
+- name: tCOOH(110)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.167284335, 0.0316364757, -3.98268007e-05, 2.43909023e-08, -5.71144646e-12,
+      -4.15935882e+04, -0.311984682]
+- name: cCOOH(110)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.231438841, 0.0302334317, -3.7699854e-05, 2.3309293e-08, -5.57132049e-12,
+      -4.1184158e+04, -1.33617395]
+- name: HCOO(110)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.564957665, 0.0254145473, -2.79526421e-05, 1.58800886e-08, -3.57916883e-12,
+      -4.52695826e+04, -2.58237086]
+- name: C(110)
+  composition: {C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.72962235, 0.019048953, -2.96579662e-05, 2.05832128e-08, -5.2275164e-12,
+      1.98107529e+04, 5.46618261]
+- name: CH(110)
+  composition: {H: 1, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.15276711, 0.0233154173, -3.25737666e-05, 2.07659539e-08, -5.01102835e-12,
+      1.79019034e+04, 3.02439777]
+- name: CH2(110)
+  composition: {H: 2, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.33273507, 0.0302895831, -4.03001124e-05, 2.6550011e-08, -6.72543193e-12,
+      1.44817553e+04, 6.85937791]
+- name: CH3(110)
+  composition: {H: 3, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.844181396, 0.0273866523, -3.54121829e-05, 2.2632762e-08, -5.50971624e-12,
+      9359.89981, 1.77561125]
+- name: OCH(110)
+  composition: {C: 1, O: 1, H: 1, Rh: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.0488484982, 0.0226119905, -2.83234713e-05, 1.79948702e-08, -4.44433301e-12,
+      -1.25720624e+04, -1.0950235]
+- name: Rh(111)
+  composition: {Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [300.0, 1500.0]
+    data:
+    - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+- name: H(111)
+  composition: {H: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-3.88876845, 0.0252164053, -3.97581346e-05, 2.72343122e-08, -6.82586696e-12,
+      -5099.95097, 13.7528725]
+- name: CO(111)
+  composition: {C: 1, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [2.68717271, 0.0113058253, -2.05751352e-05, 1.56472058e-08, -4.22487666e-12,
+      -1.77544517e+04, -12.929386]
+- name: OH(111)
+  composition: {H: 1, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.26241777, 0.0201068538, -3.08779119e-05, 2.14366858e-08, -5.45011797e-12,
+      -2.6416234e+04, 6.99102015]
+- name: O(111)
+  composition: {Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.630295965, 0.0144082946, -2.10005127e-05, 1.40290628e-08, -3.5626291e-12,
+      -2.39746771e+04, 0.461963066]
+- name: CO2(111)
+  composition: {C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.730866823, 0.0265182914, -3.56713589e-05, 2.15240706e-08, -4.89134623e-12,
+      -3.34597363e+04, -3.23301846]
+- name: H2O(111)
+  composition: {H: 2, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.146881527, 0.0247040568, -3.85636183e-05, 2.65703198e-08, -6.65307535e-12,
+      -3.15306073e+04, -2.06574831]
+- name: tCOOH(111)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.492157382, 0.0328584446, -3.91283887e-05, 2.18862538e-08, -4.72276529e-12,
+      -3.99323451e+04, 1.07553104]
+- name: cCOOH(111)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.661493362, 0.0350254487, -4.40853341e-05, 2.57064503e-08, -5.7065825e-12,
+      -3.88953528e+04, 1.93428614]
+- name: HCOO(111)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.224208958, 0.026837369, -2.75999022e-05, 1.34485092e-08, -2.56012555e-12,
+      -3.92277123e+04, -1.5661944]
+- name: C(111)
+  composition: {C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.7027102, 0.022134381, -3.34166017e-05, 2.29657422e-08, -5.8725966e-12,
+      2.21497799e+04, 7.86186152]
+- name: CH(111)
+  composition: {H: 1, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.62375872, 0.0274156639, -3.89809263e-05, 2.60904334e-08, -6.59976331e-12,
+      1.35433949e+04, 7.66520583]
+- name: CH2(111)
+  composition: {H: 2, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.89824639, 0.0308039955, -4.53269669e-05, 3.06795811e-08, -7.72412261e-12,
+      1.42948411e+04, 3.78597549]
+- name: CH3(111)
+  composition: {H: 3, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.11421905, 0.0136461793, -1.34441867e-05, 8.23739616e-09, -2.07397145e-12,
+      1.21577335e+04, -3.7614445]
+- name: OCH(111)
+  composition: {H: 1, C: 1, Rh: 2, O: 1}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.303323724, 0.0243694394, -2.90213673e-05, 1.6772113e-08, -3.82224785e-12,
+      -9718.35757, -1.16702675]
+- name: Rh(211)
+  composition: {Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [300.0, 1500.0]
+    data:
+    - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+- name: H(211)
+  composition: {H: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-3.09363263, 0.0233985489, -3.74454772e-05, 2.5669475e-08, -6.40873429e-12,
+      -5159.29021, 11.0731435]
+- name: CO(211)
+  composition: {C: 1, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [2.96899569, 7.69591143e-03, -1.38331761e-05, 1.07801266e-08, -2.97624472e-12,
+      -1.87973961e+04, -11.0932336]
+- name: OH(211)
+  composition: {H: 1, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.05653097, 0.023197117, -3.43487928e-05, 2.3464586e-08, -5.98745555e-12,
+      -3.33236188e+04, 3.7446077]
+- name: O(211)
+  composition: {Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.601814679, 0.0147976403, -2.17982977e-05, 1.44837248e-08, -3.64273572e-12,
+      -2.5739877e+04, 2.98866589]
+- name: CO2(211)
+  composition: {C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.4335789, 0.021269801, -2.56382686e-05, 1.4955993e-08, -3.45481911e-12,
+      -3.91437549e+04, -4.46924032]
+- name: H2O(211)
+  composition: {H: 2, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.14613795, 0.0223328613, -3.67919509e-05, 2.6246749e-08, -6.72308881e-12,
+      -3.33961821e+04, -4.9440262]
+- name: tCOOH(211)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.421577992, 0.0330160387, -4.19905489e-05, 2.62394985e-08, -6.33192366e-12,
+      -4.25751198e+04, 1.82298455]
+- name: cCOOH(211)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.172200199, 0.0324267652, -4.17293315e-05, 2.6363938e-08, -6.39479757e-12,
+      -4.23216745e+04, 0.869408396]
+- name: HCOO(211)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.0920150953, 0.0287770434, -3.39199798e-05, 2.03081948e-08, -4.75168694e-12,
+      -4.61145535e+04, 0.30381276]
+- name: C(211)
+  composition: {C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.08425663, 0.0202353784, -3.12811024e-05, 2.14840404e-08, -5.40645595e-12,
+      1.69611944e+04, 6.27652879]
+- name: CH(211)
+  composition: {H: 1, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.38136546, 0.0271933245, -4.03058241e-05, 2.77820943e-08, -7.09273519e-12,
+      1.32277636e+04, 7.25615649]
+- name: CH2(211)
+  composition: {H: 2, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.96253709, 0.0330604012, -4.61965417e-05, 3.13802784e-08, -7.9973765e-12,
+      1.28595805e+04, 8.94915093]
+- name: CH3(211)
+  composition: {H: 3, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.58513165, 0.0318402901, -4.27674529e-05, 2.77108382e-08, -6.78666539e-12,
+      7349.56666, 3.80156093]
+- name: OCH(211)
+  composition: {O: 1, H: 1, C: 1, Rh: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.0277863082, 0.0226629502, -2.82789455e-05, 1.79310349e-08, -4.42402486e-12,
+      -1.33612185e+04, -0.894537121]
+- name: Rh(311)
+  composition: {Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [300.0, 1500.0]
+    data:
+    - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+- name: H(311)
+  composition: {H: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.84445593, 0.0216513682, -3.39762606e-05, 2.29731122e-08, -5.68059115e-12,
+      -5271.90898, 9.85652574]
+- name: CO(311)
+  composition: {C: 1, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [2.94047651, 6.6596721e-03, -1.14677822e-05, 8.90104609e-09, -2.46814508e-12,
+      -1.84806563e+04, -10.9202872]
+- name: OH(311)
+  composition: {H: 1, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.678189833, 0.0208126433, -2.95120434e-05, 1.95428034e-08, -4.89417353e-12,
+      -3.37281206e+04, 1.68030324]
+- name: O(311)
+  composition: {Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.66253201, 0.015118908, -2.38356124e-05, 1.68564568e-08, -4.36216575e-12,
+      -2.58219245e+04, 1.79692871]
+- name: CO2(311)
+  composition: {C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.78930986, 0.0190962632, -2.15120687e-05, 1.17959945e-08, -2.60591284e-12,
+      -3.93872274e+04, -6.70142083]
+- name: H2O(311)
+  composition: {H: 2, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.864503565, 0.0221949119, -3.20937315e-05, 2.09927073e-08, -5.1011505e-12,
+      -3.41163199e+04, -4.89189909]
+- name: tCOOH(311)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.112252508, 0.0313486297, -3.93197106e-05, 2.43703966e-08, -5.82797418e-12,
+      -4.29189183e+04, -0.338963402]
+- name: cCOOH(311)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.0946052045, 0.0307605951, -3.87183871e-05, 2.38613361e-08, -5.62846402e-12,
+      -4.25160685e+04, -1.35844354]
+- name: HCOO(311)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.344778507, 0.0263539354, -2.94882541e-05, 1.69794931e-08, -3.86627347e-12,
+      -4.65709305e+04, -2.1052195]
+- name: C(311)
+  composition: {C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.08425663, 0.0202353784, -3.12811024e-05, 2.14840404e-08, -5.40645595e-12,
+      1.69611944e+04, 6.27652879]
+- name: CH(311)
+  composition: {H: 1, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.38136546, 0.0271933245, -4.03058241e-05, 2.77820943e-08, -7.09273519e-12,
+      1.32277636e+04, 7.25615649]
+- name: CH2(311)
+  composition: {H: 2, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.96253709, 0.0330604012, -4.61965417e-05, 3.13802784e-08, -7.9973765e-12,
+      1.28595805e+04, 8.94915093]
+- name: CH3(311)
+  composition: {H: 3, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.58513165, 0.0318402901, -4.27674529e-05, 2.77108382e-08, -6.78666539e-12,
+      7349.56666, 3.80156093]
+- name: OCH(311)
+  composition: {O: 1, H: 1, C: 1, Rh: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.0277863082, 0.0226629502, -2.82789455e-05, 1.79310349e-08, -4.42402486e-12,
+      -1.33612185e+04, -0.894537121]
+- name: Rh(331)
+  composition: {Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [300.0, 1500.0]
+    data:
+    - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+- name: H(331)
+  composition: {H: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-4.70312813, 0.0304510615, -4.83529239e-05, 3.29688044e-08, -8.20123891e-12,
+      -5686.2102, 17.570363]
+- name: CO(331)
+  composition: {C: 1, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.391520086, 0.0226062138, -3.91152982e-05, 2.84661451e-08, -7.43045745e-12,
+      -1.79996005e+04, -0.789814808]
+- name: OH(331)
+  composition: {H: 1, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.08003766, 0.0234172943, -3.41169886e-05, 2.27079434e-08, -5.66764972e-12,
+      -3.1299526e+04, 3.92417787]
+- name: O(331)
+  composition: {Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.2473626, 0.0183436127, -2.95493396e-05, 2.11570735e-08, -5.53914403e-12,
+      -2.61507474e+04, 3.72213981]
+- name: CO2(331)
+  composition: {C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.894225492, 0.0242033738, -3.26470995e-05, 2.12648973e-08, -5.26813444e-12,
+      -3.93328103e+04, -3.48838099]
+- name: H2O(331)
+  composition: {H: 2, Rh: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.0744237, 0.0212893707, -3.16090181e-05, 2.13744794e-08, -5.35242335e-12,
+      -3.39271256e+04, -5.61970632]
+- name: tCOOH(331)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.378692163, 0.0328051856, -4.13694358e-05, 2.56323672e-08, -6.15455841e-12,
+      -4.12417396e+04, 1.63736771]
+- name: cCOOH(331)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.147200326, 0.0323031673, -4.12719104e-05, 2.59302742e-08, -6.28120743e-12,
+      -4.09183356e+04, 0.776511111]
+- name: HCOO(331)
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.21789496e-03, 0.0284332293, -3.33659271e-05, 1.97519236e-08, -4.55730909e-12,
+      -4.49241137e+04, -0.0114638002]
+- name: C(331)
+  composition: {C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.08425663, 0.0202353784, -3.12811024e-05, 2.14840404e-08, -5.40645595e-12,
+      1.69611944e+04, 6.27652879]
+- name: CH(331)
+  composition: {H: 1, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.38136546, 0.0271933245, -4.03058241e-05, 2.77820943e-08, -7.09273519e-12,
+      1.32277636e+04, 7.25615649]
+- name: CH2(331)
+  composition: {H: 2, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.96253709, 0.0330604012, -4.61965417e-05, 3.13802784e-08, -7.9973765e-12,
+      1.28595805e+04, 8.94915093]
+- name: CH3(331)
+  composition: {H: 3, C: 1, Rh: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.58513165, 0.0318402901, -4.27674529e-05, 2.77108382e-08, -6.78666539e-12,
+      7349.56666, 3.80156093]
+- name: OCH(331)
+  composition: {O: 1, H: 1, C: 1, Rh: 2}
+  sites: 2
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.0277863082, 0.0226629502, -2.82789455e-05, 1.79310349e-08, -4.42402486e-12,
+      -1.33612185e+04, -0.894537121]
+- name: Rh100-1
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh100-2
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh100-3
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh100-4
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh100-5
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh100-6
+  composition: {C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.91841233, 0.0192818934, -2.74574403e-05, 1.82344725e-08, -4.54380667e-12,
+      -3.45016013e+04, -8.88569411]
+- name: Rh100-7
+  composition: {H: 2, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.36484141e-03, 0.0249852767, -3.68642761e-05, 2.4933801e-08, -6.23839999e-12,
+      -2.67895406e+04, -1.16585553]
+- name: Rh100-8
+  composition: {H: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.50336707, 0.0238493549, -3.53149516e-05, 2.34900109e-08, -5.79736797e-12,
+      -2.349566e+04, 5.71692084]
+- name: Rh100-9
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.56138971, 0.0351580914, -4.62755365e-05, 2.85281993e-08, -6.6873264e-12,
+      -3.20290827e+04, 2.71433113]
+- name: Rh100-10
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.423983321, 0.0324754098, -4.35952313e-05, 2.76093818e-08, -6.60422738e-12,
+      -3.85337918e+04, 0.635011091]
+- name: Rh100-11
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.02476751, 0.0254663625, -3.26716621e-05, 2.04081106e-08, -4.87075812e-12,
+      -3.57157105e+04, -3.74060012]
+- name: Rh100-12
+  composition: {H: 2, C: 1, Rh: 2, O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.510110784, 0.0469070548, -5.97200708e-05, 3.66111463e-08, -8.59606466e-12,
+      -7.46624694e+04, 0.236166422]
+- name: Rh100-13
+  composition: {H: 1, C: 1, Rh: 2, O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.550003026, 0.0407637584, -5.11016243e-05, 3.06486355e-08, -7.07508784e-12,
+      -6.48216821e+04, 0.907933742]
+- name: Rh100-14
+  composition: {H: 2, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.52903814, 0.0355627807, -4.81546645e-05, 3.08537383e-08, -7.46298315e-12,
+      -5.89256122e+04, 5.90986196]
+- name: Rh100-15
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.965456243, 0.034179643, -4.39952082e-05, 2.70282167e-08, -6.36128626e-12,
+      -3.5644852e+04, 2.87028286]
+- name: Rh100-16
+  composition: {C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.490877, 0.0260435744, -4.07066117e-05, 2.80146924e-08, -7.0726394e-12,
+      3997.54404, 5.00210492]
+- name: Rh100-17
+  composition: {H: 1, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.6857332, 0.026253122, -3.77251432e-05, 2.47596181e-08, -6.07047084e-12,
+      1.28646891e+04, 10.4873861]
+- name: Rh100-18
+  composition: {H: 2, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.16835663, 0.0261100208, -3.57369322e-05, 2.3844668e-08, -5.99663307e-12,
+      1.3348029e+04, 8.338811]
+- name: Rh100-19
+  composition: {H: 3, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.63780936, 0.0286297343, -3.58233226e-05, 2.28443351e-08, -5.61738282e-12,
+      1.23867101e+04, 6.7083531]
+- name: Rh100-20
+  composition: {H: 4, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.144877887, 0.0237165829, -2.5607115e-05, 1.54921717e-08, -3.76059852e-12,
+      1.0957033e+04, -1.3881767]
+- name: Rh100-21
+  composition: {H: 1, C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.29585073, 0.0193614022, -2.29080592e-05, 1.34008548e-08, -3.06842852e-12,
+      -1.10508997e+04, -1.006707]
+- name: Rh100-22
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.722849245, 0.0327115955, -4.37759071e-05, 2.80456503e-08, -6.81802451e-12,
+      -2.73429235e+04, 2.16391059]
+- name: Rh100-23
+  composition: {H: 1, C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.2492376, 0.0332075585, -4.85942196e-05, 3.26358741e-08, -8.14428548e-12,
+      -3555.30883, 8.45270241]
+- name: Rh110-1
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh110-2
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh110-3
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh110-4
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh110-5
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh110-6
+  composition: {C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [2.03774295, 0.0187410649, -2.6778413e-05, 1.78785189e-08, -4.47534641e-12,
+      -2.74242938e+04, -8.46347076]
+- name: Rh110-7
+  composition: {H: 2, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.28709912, 0.0284008921, -4.07326533e-05, 2.69778979e-08, -6.65115068e-12,
+      -2.55707827e+04, 4.56882823]
+- name: Rh110-8
+  composition: {H: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.554690585, 0.0206024379, -3.07766224e-05, 2.05961825e-08, -5.10401346e-12,
+      -1.98986283e+04, 2.50872489]
+- name: Rh110-9
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.24576427, 0.0288284046, -3.45848646e-05, 1.99834717e-08, -4.47803866e-12,
+      -3.24155842e+04, -0.229995401]
+- name: Rh110-10
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.647735813, 0.0258901759, -3.2046951e-05, 1.93163601e-08, -4.47186298e-12,
+      -3.68368234e+04, -1.71396832]
+- name: Rh110-11
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.56474853, 0.0259747302, -3.6088736e-05, 2.3876208e-08, -5.9326732e-12,
+      -3.70879572e+04, -6.55533647]
+- name: Rh110-12
+  composition: {H: 2, C: 1, Rh: 2, O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.235230651, 0.0432288801, -5.61068677e-05, 3.52127704e-08, -8.41012299e-12,
+      -7.06208411e+04, -0.676957148]
+- name: Rh110-13
+  composition: {H: 1, C: 1, Rh: 2, O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.0256523038, 0.0361890676, -4.26990943e-05, 2.45305913e-08, -5.49604643e-12,
+      -6.48912079e+04, 0.22679231]
+- name: Rh110-14
+  composition: {H: 2, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.665207612, 0.0326644694, -4.43452211e-05, 2.85804791e-08, -6.94983863e-12,
+      -5.1265821e+04, 3.41653205]
+- name: Rh110-15
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.290953643, 0.0245171297, -2.74978101e-05, 1.56163228e-08, -3.51126653e-12,
+      -3.36108213e+04, 1.02116906]
+- name: Rh110-16
+  composition: {C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.824319334, 0.0227655527, -3.50115906e-05, 2.3854187e-08, -5.98374698e-12,
+      9941.22482, 2.43658749]
+- name: Rh110-17
+  composition: {H: 1, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.86107646, 0.0180534391, -2.52686609e-05, 1.66138386e-08, -4.11393355e-12,
+      2.17621684e+04, 2.47424382]
+- name: Rh110-18
+  composition: {H: 2, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.29034521, 0.0313777537, -4.43537554e-05, 2.92601069e-08, -7.2302499e-12,
+      2.06881898e+04, 7.92797007]
+- name: Rh110-19
+  composition: {H: 3, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.89416149, 0.030091983, -3.83128731e-05, 2.4597292e-08, -6.06175638e-12,
+      1.29050675e+04, 7.42393094]
+- name: Rh110-20
+  composition: {H: 4, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.0966205493, 0.0222270784, -2.26237789e-05, 1.33509989e-08, -3.22204645e-12,
+      1.16192489e+04, -0.404910159]
+- name: Rh110-21
+  composition: {H: 1, C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.610000463, 0.0182771025, -2.33526738e-05, 1.49566618e-08, -3.69124771e-12,
+      -1.04661165e+04, -1.81273284]
+- name: Rh110-22
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.722849245, 0.0327115955, -4.37759071e-05, 2.80456503e-08, -6.81802451e-12,
+      -2.73429235e+04, 2.16391059]
+- name: Rh110-23
+  composition: {H: 1, C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.651038648, 0.0272383148, -3.98873159e-05, 2.69247537e-08, -6.74375867e-12,
+      1.92763726e+04, 3.86849341]
+- name: Rh111-1
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh111-2
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh111-3
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh111-4
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh111-5
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh111-6
+  composition: {C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.48219673, 0.0207521274, -2.98684706e-05, 2.00177686e-08, -5.02222378e-12,
+      -2.73678988e+04, -7.3174413]
+- name: Rh111-7
+  composition: {H: 2, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.649865603, 0.0268700166, -3.90472252e-05, 2.60691152e-08, -6.45854736e-12,
+      -2.20542389e+04, 2.50075865]
+- name: Rh111-8
+  composition: {H: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.03295892, 0.0215950493, -3.16005721e-05, 2.0888843e-08, -5.13699476e-12,
+      -1.63157348e+04, 3.30341941]
+- name: Rh111-9
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.504369044, 0.0333146504, -4.28779347e-05, 2.62104013e-08, -6.13218915e-12,
+      -2.88065093e+04, 1.788409]
+- name: Rh111-10
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.304788686, 0.027470261, -3.47022243e-05, 2.12216144e-08, -4.96541704e-12,
+      -3.58749685e+04, -1.25392388]
+- name: Rh111-11
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.862264678, 0.0287365884, -4.04040357e-05, 2.68617592e-08, -6.69074076e-12,
+      -3.56620862e+04, -4.48150653]
+- name: Rh111-12
+  composition: {H: 2, C: 1, Rh: 2, O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.04213605, 0.0479879722, -6.32791862e-05, 4.01149341e-08, -9.65316634e-12,
+      -7.33462877e+04, 2.13086743]
+- name: Rh111-13
+  composition: {H: 1, C: 1, Rh: 2, O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.947835029, 0.0405177155, -4.94819161e-05, 2.91282512e-08, -6.63773859e-12,
+      -6.10280066e+04, 1.49712013]
+- name: Rh111-14
+  composition: {H: 2, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.10298521, 0.0341089108, -4.84516967e-05, 3.23450238e-08, -8.04843912e-12,
+      -5.24001583e+04, 2.31076089]
+- name: Rh111-15
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.541586918, 0.0228315448, -2.50453532e-05, 1.41161896e-08, -3.16932528e-12,
+      -2.78289072e+04, 0.332491002]
+- name: Rh111-16
+  composition: {C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.96456142, 0.0276960106, -4.30488984e-05, 2.95298989e-08, -7.44125385e-12,
+      1.60728953e+04, 5.39473164]
+- name: Rh111-17
+  composition: {H: 1, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.33423508, 0.0240881693, -3.48985058e-05, 2.33434333e-08, -5.83181477e-12,
+      2.33783561e+04, 7.40903316]
+- name: Rh111-18
+  composition: {H: 2, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.18194854, 0.0273778353, -3.68798925e-05, 2.40529695e-08, -5.95006205e-12,
+      1.40100543e+04, 7.29019869]
+- name: Rh111-19
+  composition: {H: 3, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.41151842, 0.0271293066, -3.22182743e-05, 1.99025113e-08, -4.8266996e-12,
+      1.48504913e+04, 3.80556825]
+- name: Rh111-20
+  composition: {H: 4, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.055862995, 0.0218064417, -2.10710039e-05, 1.19199011e-08, -2.80320254e-12,
+      1.35515883e+04, 1.69400823]
+- name: Rh111-21
+  composition: {H: 1, C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.209373975, 0.0214202282, -2.73994982e-05, 1.72396029e-08, -4.1749118e-12,
+      -6964.43064, -0.705648925]
+- name: Rh111-22
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.17190979, 0.0343836484, -4.61619485e-05, 2.95703688e-08, -7.18259476e-12,
+      -2.46225309e+04, 2.08401575]
+- name: Rh111-23
+  composition: {H: 1, C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.68342906, 0.0348945241, -5.13143194e-05, 3.45651252e-08, -8.6412594e-12,
+      6793.65408, 8.79134416]
+- name: Rh211-1
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh211-2
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh211-3
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh211-4
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh211-5
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh211-6
+  composition: {C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.06713009, 0.0231726602, -3.44865371e-05, 2.35557016e-08, -5.97084764e-12,
+      -3.05297482e+04, -4.30827536]
+- name: Rh211-7
+  composition: {H: 2, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.53214069, 0.0296350556, -4.30318145e-05, 2.87382451e-08, -7.12346971e-12,
+      -2.51587578e+04, 6.25213311]
+- name: Rh211-8
+  composition: {H: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.69551114, 0.0262490718, -4.05365723e-05, 2.76922699e-08, -6.95515766e-12,
+      -2.32932318e+04, 6.16237511]
+- name: Rh211-9
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.6532445, 0.0395634202, -5.3932193e-05, 3.42776412e-08, -8.22960002e-12,
+      -3.35917416e+04, 7.79655572]
+- name: Rh211-10
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.209460113, 0.0303705349, -4.00645488e-05, 2.52568151e-08, -6.03661331e-12,
+      -3.78890371e+04, 1.76272135]
+- name: Rh211-11
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.666524165, 0.030386529, -4.37878218e-05, 2.95069588e-08, -7.4038772e-12,
+      -3.74755544e+04, -2.49477281]
+- name: Rh211-12
+  composition: {H: 2, C: 1, Rh: 2, O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.91337946, 0.0454511769, -5.75529811e-05, 3.57371494e-08, -8.52293482e-12,
+      -7.47328608e+04, 3.09490993]
+- name: Rh211-13
+  composition: {H: 1, C: 1, Rh: 2, O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.48296064, 0.0480776307, -6.88379811e-05, 4.57273107e-08, -1.13352127e-11,
+      -6.6060192e+04, 7.0675172]
+- name: Rh211-14
+  composition: {H: 2, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.6212251, 0.0375704146, -5.2956309e-05, 3.4878712e-08, -8.59453754e-12,
+      -5.37380925e+04, 7.90892979]
+- name: Rh211-15
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.636543304, 0.0289564749, -3.51014302e-05, 2.11320311e-08, -4.9480785e-12,
+      -3.33928787e+04, 4.25251353]
+- name: Rh211-16
+  composition: {C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.55729847, 0.0276367849, -4.44565208e-05, 3.11229362e-08, -7.94037525e-12,
+      5756.85522, 4.69064855]
+- name: Rh211-17
+  composition: {H: 1, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-3.01941789, 0.0273944851, -3.94528862e-05, 2.59497804e-08, -6.37288012e-12,
+      1.95618819e+04, 11.4582532]
+- name: Rh211-18
+  composition: {H: 2, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.14717829, 0.0236684993, -3.14539383e-05, 2.0447588e-08, -5.05479799e-12,
+      1.91847237e+04, 5.03827788]
+- name: Rh211-19
+  composition: {H: 3, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.31181727, 0.0271454521, -3.32001525e-05, 2.08814047e-08, -5.09460449e-12,
+      1.14150647e+04, 5.08128918]
+- name: Rh211-20
+  composition: {H: 4, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.0474529709, 0.0245274056, -2.68877837e-05, 1.6382258e-08, -3.98989442e-12,
+      9793.12393, -1.03267918]
+- name: Rh211-21
+  composition: {H: 1, C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.29585073, 0.0193614022, -2.29080592e-05, 1.34008548e-08, -3.06842852e-12,
+      -1.10508997e+04, -1.006707]
+- name: Rh211-22
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.722849245, 0.0327115955, -4.37759071e-05, 2.80456503e-08, -6.81802451e-12,
+      -2.73429235e+04, 2.16391059]
+- name: Rh211-23
+  composition: {H: 1, C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.2492376, 0.0332075585, -4.85942196e-05, 3.26358741e-08, -8.14428548e-12,
+      -3555.30883, 8.45270241]
+- name: Rh311-1
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh311-2
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh311-3
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh311-4
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh311-5
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh311-6
+  composition: {C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.33224199, 0.0216846566, -3.17467782e-05, 2.14846515e-08, -5.41518868e-12,
+      -2.77274264e+04, -4.65122949]
+- name: Rh311-7
+  composition: {H: 2, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.25254872, 0.0279505642, -3.98199118e-05, 2.62847295e-08, -6.46747726e-12,
+      -2.60352872e+04, 4.15169612]
+- name: Rh311-8
+  composition: {H: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.13110817, 0.0225912435, -3.36201861e-05, 2.24502827e-08, -5.55644962e-12,
+      -2.30127372e+04, 3.9464553]
+- name: Rh311-9
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.02008137, 0.0361251242, -4.76763459e-05, 2.9606409e-08, -6.99491468e-12,
+      -3.37297446e+04, 4.53438894]
+- name: Rh311-10
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.210028848, 0.0279464844, -3.55800292e-05, 2.18881339e-08, -5.14372185e-12,
+      -3.8286837e+04, -0.537623425]
+- name: Rh311-11
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [1.06530689, 0.0281453475, -3.96616206e-05, 2.64131041e-08, -6.58489412e-12,
+      -3.79298981e+04, -4.81282147]
+- name: Rh311-12
+  composition: {H: 2, C: 1, Rh: 2, O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.48868696, 0.0512030499, -6.95957265e-05, 4.4924321e-08, -1.0927726e-11,
+      -7.5587508e+04, 4.94919027]
+- name: Rh311-13
+  composition: {H: 1, C: 1, Rh: 2, O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.692394233, 0.0435021849, -6.03658185e-05, 3.93564084e-08, -9.64587842e-12,
+      -6.64043304e+04, 1.98623588]
+- name: Rh311-14
+  composition: {H: 2, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.05144393, 0.0342831294, -4.68792824e-05, 3.03132804e-08, -7.3843732e-12,
+      -5.4109118e+04, 4.81133845]
+- name: Rh311-15
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [9.64809979e-03, 0.0254445787, -2.87872331e-05, 1.64515622e-08, -3.71594123e-12,
+      -3.35281822e+04, 1.21228235]
+- name: Rh311-16
+  composition: {C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.55729847, 0.0276367849, -4.44565208e-05, 3.11229362e-08, -7.94037525e-12,
+      2875.4903, 4.69064855]
+- name: Rh311-17
+  composition: {H: 1, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-3.01941789, 0.0273944851, -3.94528862e-05, 2.59497804e-08, -6.37288012e-12,
+      1.95618819e+04, 11.4582532]
+- name: Rh311-18
+  composition: {H: 2, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.14717829, 0.0236684993, -3.14539383e-05, 2.0447588e-08, -5.05479799e-12,
+      1.91847237e+04, 5.03827788]
+- name: Rh311-19
+  composition: {H: 3, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.31181727, 0.0271454521, -3.32001525e-05, 2.08814047e-08, -5.09460449e-12,
+      1.14150647e+04, 5.08128918]
+- name: Rh311-20
+  composition: {H: 4, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.0474529709, 0.0245274056, -2.68877837e-05, 1.6382258e-08, -3.98989442e-12,
+      9793.12393, -1.03267918]
+- name: Rh311-21
+  composition: {H: 1, C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.522119255, 0.0186417121, -2.394111e-05, 1.53749708e-08, -3.79971631e-12,
+      -1.04694109e+04, -1.10512894]
+- name: Rh311-22
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.15200238, 0.0308301827, -4.11884224e-05, 2.637453e-08, -6.40610478e-12,
+      -2.19445002e+04, 1.4925648]
+- name: Rh311-23
+  composition: {H: 1, C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.58288664, 0.0281808122, -4.23942414e-05, 2.90650604e-08, -7.35092677e-12,
+      2.15566599e+04, 5.70304725]
+- name: Rh331-1
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh331-2
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh331-3
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh331-4
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh331-5
+  composition: {}
+  thermo:
+    model: constant-cp
+- name: Rh331-6
+  composition: {C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.696312655, 0.0253562767, -3.85401861e-05, 2.65920593e-08, -6.77011013e-12,
+      -2.64561421e+04, -1.29066738]
+- name: Rh331-7
+  composition: {H: 2, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.88498086, 0.0306576581, -4.44944002e-05, 2.97405731e-08, -7.38189233e-12,
+      -2.55429458e+04, 7.13829859]
+- name: Rh331-8
+  composition: {H: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.44570727, 0.0235324884, -3.50922482e-05, 2.35124122e-08, -5.83349795e-12,
+      -1.93522067e+04, 5.89228108]
+- name: Rh331-9
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.47249979, 0.0382272463, -5.14896274e-05, 3.24921729e-08, -7.76548361e-12,
+      -3.25692339e+04, 7.08909168]
+- name: Rh331-10
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.174296768, 0.0303303263, -4.00708118e-05, 2.52862185e-08, -6.04734117e-12,
+      -3.66864248e+04, 1.73995401]
+- name: Rh331-11
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.779344179, 0.0301156519, -4.35199584e-05, 2.93890873e-08, -7.38500394e-12,
+      -3.65985606e+04, -2.93136947]
+- name: Rh331-12
+  composition: {H: 2, C: 1, Rh: 2, O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.671160512, 0.0445844072, -5.6051916e-05, 3.46143066e-08, -8.22377063e-12,
+      -7.28214782e+04, 2.31114739]
+- name: Rh331-13
+  composition: {H: 1, C: 1, Rh: 2, O: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-2.13703945, 0.0479741422, -6.39795017e-05, 4.03371712e-08, -9.66191878e-12,
+      -6.56752359e+04, 8.93184432]
+- name: Rh331-14
+  composition: {H: 2, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.92625476, 0.0383630903, -5.40704727e-05, 3.56540574e-08, -8.7979298e-12,
+      -5.29834533e+04, 9.01605107]
+- name: Rh331-15
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.608192961, 0.0293874721, -3.62846597e-05, 2.21388551e-08, -5.22940685e-12,
+      -3.30033401e+04, 4.71151204]
+- name: Rh331-16
+  composition: {C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.50767608, 0.0275195814, -4.43540466e-05, 3.10848853e-08, -7.93538544e-12,
+      9335.33145, 4.86550314]
+- name: Rh331-17
+  composition: {H: 1, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-3.01941789, 0.0273944851, -3.94528862e-05, 2.59497804e-08, -6.37288012e-12,
+      1.95618819e+04, 11.4582532]
+- name: Rh331-18
+  composition: {H: 2, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.14717829, 0.0236684993, -3.14539383e-05, 2.0447588e-08, -5.05479799e-12,
+      1.91847237e+04, 5.03827788]
+- name: Rh331-19
+  composition: {H: 3, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.31181727, 0.0271454521, -3.32001525e-05, 2.08814047e-08, -5.09460449e-12,
+      1.14150647e+04, 5.08128918]
+- name: Rh331-20
+  composition: {H: 4, C: 1, Rh: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.0474529709, 0.0245274056, -2.68877837e-05, 1.6382258e-08, -3.98989442e-12,
+      9793.12393, -1.03267918]
+- name: Rh331-21
+  composition: {H: 1, C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [0.29585073, 0.0193614022, -2.29080592e-05, 1.34008548e-08, -3.06842852e-12,
+      -1.10508997e+04, -1.006707]
+- name: Rh331-22
+  composition: {H: 1, C: 1, Rh: 2, O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-0.722849245, 0.0327115955, -4.37759071e-05, 2.80456503e-08, -6.81802451e-12,
+      -2.73429235e+04, 2.16391059]
+- name: Rh331-23
+  composition: {H: 1, C: 1, Rh: 2, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1500.0]
+    data:
+    - [-1.58288664, 0.0281808122, -4.23942414e-05, 2.90650604e-08, -7.35092677e-12,
+      2.15566599e+04, 5.70304725]
+
+Rh100-reactions:
+- equation: CO + Rh(100) <=> CO(100)  # Reaction 1
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh100-1
+- equation: CO2 + 2 Rh(100) <=> CO2(100)  # Reaction 2
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 1.0365e+07}
+  id: Rh100-2
+- equation: H2O + Rh(100) <=> H2O(100)  # Reaction 3
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh100-3
+- equation: H2 + Rh(100) + Rh(100) <=> H(100) + H(100)  # Reaction 4
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh100-4
+- equation: O2 + Rh(100) + Rh(100) <=> O(100) + O(100)  # Reaction 5
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh100-5
+- equation: CO2(100) <=> CO(100) + O(100)  # Reaction 6
+  id: Rh100-6
+  rate-constant: {A: 5.8027e+08, b: 1.0, Ea: 1.7928e+07}
+- equation: H2O(100) + Rh(100) <=> OH(100) + H(100)  # Reaction 7
+  id: Rh100-7
+  rate-constant: {A: 4.2742e+15, b: 1.0, Ea: 4.3193e+07}
+- equation: OH(100) + Rh(100) <=> O(100) + H(100)  # Reaction 8
+  id: Rh100-8
+  rate-constant: {A: 3.8792e+17, b: 1.0, Ea: 5.9944e+07}
+- equation: CO2(100) + H(100) <=> tCOOH(100) + Rh(100)  # Reaction 9
+  id: Rh100-9
+  rate-constant: {A: 7.4549e+15, b: 1.0, Ea: 8.6503e+07}
+- equation: cCOOH(100) <=> tCOOH(100)  # Reaction 10
+  id: Rh100-10
+  rate-constant: {A: 4.849e+09, b: 1.0, Ea: 2.0106e+07}
+- equation: CO(100) + OH(100) <=> cCOOH(100)  # Reaction 11
+  id: Rh100-11
+  rate-constant: {A: 5.2171e+16, b: 1.0, Ea: 1.1152e+08}
+- equation: tCOOH(100) + OH(100) <=> CO2(100) + H2O(100)  # Reaction 12
+  id: Rh100-12
+  rate-constant: {A: 1.8584e+22, b: 1.0, Ea: 3.8956e+07}
+- equation: tCOOH(100) + O(100) <=> CO2(100) + OH(100)  # Reaction 13
+  id: Rh100-13
+  rate-constant: {A: 1.278e+16, b: 1.0, Ea: 2.0107e+07}
+- equation: OH(100) + OH(100) <=> H2O(100) + O(100)  # Reaction 14
+  id: Rh100-14
+  rate-constant: {A: 1.9357e+21, b: 1.0, Ea: 3.6149e+07}
+- equation: CO2(100) + H(100) <=> HCOO(100) + Rh(100)  # Reaction 15
+  id: Rh100-15
+  rate-constant: {A: 4.4949e+14, b: 1.0, Ea: 5.3365e+07}
+- equation: CO(100) + Rh(100) <=> C(100) + O(100)  # Reaction 16
+  id: Rh100-16
+  rate-constant: {A: 1.2988e+16, b: 1.0, Ea: 1.8511e+08}
+- equation: CH(100) + Rh(100) <=> C(100) + H(100)  # Reaction 17
+  id: Rh100-17
+  rate-constant: {A: 1.8393e+17, b: 1.0, Ea: 3.9309e+07}
+- equation: CH2(100) + Rh(100) <=> CH(100) + H(100)  # Reaction 18
+  id: Rh100-18
+  rate-constant: {A: 9.3692e+17, b: 1.0, Ea: 0.0}
+- equation: CH3(100) + Rh(100) <=> CH2(100) + H(100)  # Reaction 19
+  id: Rh100-19
+  rate-constant: {A: 4.3487e+17, b: 1.0, Ea: 2.0585e+07}
+- equation: CH4 + Rh(100) + Rh(100) <=> CH3(100) + H(100)  # Reaction 20
+  id: Rh100-20
+  rate-constant: {A: 1.1529e+13, b: 1.0, Ea: 4.7391e+07}
+- equation: CO(100) + H(100) <=> OCH(100)  # Reaction 21
+  id: Rh100-21
+  rate-constant: {A: 9.938e+15, b: 1.0, Ea: 1.1064e+08}
+- equation: OCH(100) + O(100) <=> HCOO(100) + Rh(100)  # Reaction 22
+  id: Rh100-22
+  rate-constant: {A: 2.3293e+16, b: 1.0, Ea: 1.0916e+08}
+- equation: CH(100) + O(100) <=> OCH(100)  # Reaction 23
+  id: Rh100-23
+  rate-constant: {A: 9.5515e+15, b: 1.0, Ea: 1.1464e+08}
+
+Rh110-reactions:
+- equation: CO + Rh(110) <=> CO(110)  # Reaction 24
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh110-1
+- equation: CO2 + 2 Rh(110) <=> CO2(110)  # Reaction 25
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh110-2
+- equation: H2O + Rh(110) <=> H2O(110)  # Reaction 26
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh110-3
+- equation: H2 + Rh(110) + Rh(110) <=> H(110) + H(110)  # Reaction 27
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh110-4
+- equation: O2 + Rh(110) + Rh(110) <=> O(110) + O(110)  # Reaction 28
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh110-5
+- equation: CO2(110) <=> CO(110) + O(110)  # Reaction 29
+  id: Rh110-6
+  rate-constant: {A: 4.2226e+10, b: 1.0, Ea: 1.0144e+08}
+- equation: H2O(110) + Rh(110) <=> OH(110) + H(110)  # Reaction 30
+  id: Rh110-7
+  rate-constant: {A: 2.8699e+16, b: 1.0, Ea: 5.3988e+07}
+- equation: OH(110) + Rh(110) <=> O(110) + H(110)  # Reaction 31
+  id: Rh110-8
+  rate-constant: {A: 1.678e+18, b: 1.0, Ea: 8.9413e+07}
+- equation: CO2(110) + H(110) <=> tCOOH(110) + Rh(110)  # Reaction 32
+  id: Rh110-9
+  rate-constant: {A: 1.1039e+18, b: 1.0, Ea: 9.3487e+07}
+- equation: cCOOH(110) <=> tCOOH(110)  # Reaction 33
+  id: Rh110-10
+  rate-constant: {A: 1.035e+10, b: 1.0, Ea: 3.3311e+07}
+- equation: CO(110) + OH(110) <=> cCOOH(110)  # Reaction 34
+  id: Rh110-11
+  rate-constant: {A: 6.4242e+16, b: 1.0, Ea: 9.352e+07}
+- equation: tCOOH(110) + OH(110) <=> CO2(110) + H2O(110)  # Reaction 35
+  id: Rh110-12
+  rate-constant: {A: 2.7584e+17, b: 1.0, Ea: 1.0015e+07}
+- equation: tCOOH(110) + O(110) <=> CO2(110) + OH(110)  # Reaction 36
+  id: Rh110-13
+  rate-constant: {A: 2.1598e+17, b: 1.0, Ea: 5.3921e+06}
+- equation: OH(110) + OH(110) <=> H2O(110) + O(110)  # Reaction 37
+  id: Rh110-14
+  rate-constant: {A: 3.6726e+17, b: 1.0, Ea: 7.9304e+07}
+- equation: CO2(110) + H(110) <=> HCOO(110) + Rh(110)  # Reaction 38
+  id: Rh110-15
+  rate-constant: {A: 8.5781e+17, b: 1.0, Ea: 7.9384e+07}
+- equation: CO(110) + Rh(110) <=> C(110) + O(110)  # Reaction 39
+  id: Rh110-16
+  rate-constant: {A: 2.2729e+16, b: 1.0, Ea: 2.288e+08}
+- equation: CH(110) + Rh(110) <=> C(110) + H(110)  # Reaction 40
+  id: Rh110-17
+  rate-constant: {A: 6.3259e+17, b: 1.0, Ea: 2.8777e+07}
+- equation: CH2(110) + Rh(110) <=> CH(110) + H(110)  # Reaction 41
+  id: Rh110-18
+  rate-constant: {A: 3.8414e+09, b: 1.0, Ea: 5.2565e+07}
+- equation: CH3(110) + Rh(110) <=> CH2(110) + H(110)  # Reaction 42
+  id: Rh110-19
+  rate-constant: {A: 2.6145e+17, b: 1.0, Ea: 2.6765e+07}
+- equation: CH4 + Rh(110) + Rh(110) <=> CH3(110) + H(110)  # Reaction 43
+  id: Rh110-20
+  rate-constant: {A: 1.1529e+13, b: 1.0, Ea: 4.7391e+07}
+- equation: CO(110) + H(110) <=> OCH(110)  # Reaction 44
+  id: Rh110-21
+  rate-constant: {A: 9.938e+15, b: 1.0, Ea: 1.1064e+08}
+- equation: OCH(110) + O(110) <=> HCOO(110) + Rh(110)  # Reaction 45
+  id: Rh110-22
+  rate-constant: {A: 2.3293e+16, b: 1.0, Ea: 1.0916e+08}
+- equation: CH(110) + O(110) <=> OCH(110)  # Reaction 46
+  id: Rh110-23
+  rate-constant: {A: 9.5515e+15, b: 1.0, Ea: 1.1464e+08}
+
+Rh111-reactions:
+- equation: CO + Rh(111) <=> CO(111)  # Reaction 47
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh111-1
+- equation: CO2 + 2 Rh(111) <=> CO2(111)  # Reaction 48
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 1.9901e+07}
+  id: Rh111-2
+- equation: H2O + Rh(111) <=> H2O(111)  # Reaction 49
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh111-3
+- equation: H2 + Rh(111) + Rh(111) <=> H(111) + H(111)  # Reaction 50
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 1.206e+06}
+  id: Rh111-4
+- equation: O2 + Rh(111) + Rh(111) <=> O(111) + O(111)  # Reaction 51
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh111-5
+- equation: CO2(111) <=> CO(111) + O(111)  # Reaction 52
+  id: Rh111-6
+  rate-constant: {A: 3.1849e+09, b: 1.0, Ea: 4.8792e+07}
+- equation: H2O(111) + Rh(111) <=> OH(111) + H(111)  # Reaction 53
+  id: Rh111-7
+  rate-constant: {A: 4.3466e+16, b: 1.0, Ea: 6.6402e+07}
+- equation: OH(111) + Rh(111) <=> O(111) + H(111)  # Reaction 54
+  id: Rh111-8
+  rate-constant: {A: 3.3564e+17, b: 1.0, Ea: 7.4116e+07}
+- equation: CO2(111) + H(111) <=> tCOOH(111) + Rh(111)  # Reaction 55
+  id: Rh111-9
+  rate-constant: {A: 2.526e+17, b: 1.0, Ea: 8.2004e+07}
+- equation: cCOOH(111) <=> tCOOH(111)  # Reaction 56
+  id: Rh111-10
+  rate-constant: {A: 1.3261e+10, b: 1.0, Ea: 3.1277e+07}
+- equation: CO(111) + OH(111) <=> cCOOH(111)  # Reaction 57
+  id: Rh111-11
+  rate-constant: {A: 1.6499e+17, b: 1.0, Ea: 7.9598e+07}
+- equation: tCOOH(111) + OH(111) <=> CO2(111) + H2O(111)  # Reaction 58
+  id: Rh111-12
+  rate-constant: {A: 2.8836e+20, b: 1.0, Ea: 9.1834e+06}
+- equation: tCOOH(111) + O(111) <=> CO2(111) + OH(111)  # Reaction 59
+  id: Rh111-13
+  rate-constant: {A: 7.185e+18, b: 1.0, Ea: 2.9767e+07}
+- equation: OH(111) + OH(111) <=> H2O(111) + O(111)  # Reaction 60
+  id: Rh111-14
+  rate-constant: {A: 8.114e+17, b: 1.0, Ea: 0.028081}
+- equation: CO2(111) + H(111) <=> HCOO(111) + Rh(111)  # Reaction 61
+  id: Rh111-15
+  rate-constant: {A: 7.8005e+17, b: 1.0, Ea: 8.6031e+07}
+- equation: CO(111) + Rh(111) <=> C(111) + O(111)  # Reaction 62
+  id: Rh111-16
+  rate-constant: {A: 9.503e+15, b: 1.0, Ea: 2.722e+08}
+- equation: CH(111) + Rh(111) <=> C(111) + H(111)  # Reaction 63
+  id: Rh111-17
+  rate-constant: {A: 1.0122e+17, b: 1.0, Ea: 7.9748e+07}
+- equation: CH2(111) + Rh(111) <=> CH(111) + H(111)  # Reaction 64
+  id: Rh111-18
+  rate-constant: {A: 8.114e+17, b: 1.0, Ea: 0.0}
+- equation: CH3(111) + Rh(111) <=> CH2(111) + H(111)  # Reaction 65
+  id: Rh111-19
+  rate-constant: {A: 5.0025e+15, b: 1.0, Ea: 1.8558e+07}
+- equation: CH4 + Rh(111) + Rh(111) <=> CH3(111) + H(111)  # Reaction 66
+  id: Rh111-20
+  rate-constant: {A: 1.1529e+13, b: 1.0, Ea: 4.7391e+07}
+- equation: CO(111) + H(111) <=> OCH(111)  # Reaction 67
+  id: Rh111-21
+  rate-constant: {A: 6.5859e+16, b: 1.0, Ea: 1.2807e+08}
+- equation: OCH(111) + O(111) <=> HCOO(111) + Rh(111)  # Reaction 68
+  id: Rh111-22
+  rate-constant: {A: 2.0234e+16, b: 1.0, Ea: 6.9027e+07}
+- equation: CH(111) + O(111) <=> OCH(111)  # Reaction 69
+  id: Rh111-23
+  rate-constant: {A: 9.5515e+15, b: 1.0, Ea: 1.1464e+08}
+
+Rh211-reactions:
+- equation: CO + Rh(211) <=> CO(211)  # Reaction 70
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh211-1
+- equation: CO2 + 2 Rh(211) <=> CO2(211)  # Reaction 71
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh211-2
+- equation: H2O + Rh(211) <=> H2O(211)  # Reaction 72
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh211-3
+- equation: H2 + Rh(211) + Rh(211) <=> H(211) + H(211)  # Reaction 73
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh211-4
+- equation: O2 + Rh(211) + Rh(211) <=> O(211) + O(211)  # Reaction 74
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh211-5
+- equation: CO2(211) <=> CO(211) + O(211)  # Reaction 75
+  id: Rh211-6
+  rate-constant: {A: 2.6207e+09, b: 1.0, Ea: 8.5458e+07}
+- equation: H2O(211) + Rh(211) <=> OH(211) + H(211)  # Reaction 76
+  id: Rh211-7
+  rate-constant: {A: 4.6896e+16, b: 1.0, Ea: 6.3655e+07}
+- equation: OH(211) + Rh(211) <=> O(211) + H(211)  # Reaction 77
+  id: Rh211-8
+  rate-constant: {A: 9.2827e+17, b: 1.0, Ea: 8.2448e+07}
+- equation: CO2(211) + H(211) <=> tCOOH(211) + Rh(211)  # Reaction 78
+  id: Rh211-9
+  rate-constant: {A: 2.7235e+17, b: 1.0, Ea: 8.6222e+07}
+- equation: cCOOH(211) <=> tCOOH(211)  # Reaction 79
+  id: Rh211-10
+  rate-constant: {A: 7.9465e+09, b: 1.0, Ea: 3.349e+07}
+- equation: CO(211) + OH(211) <=> cCOOH(211)  # Reaction 80
+  id: Rh211-11
+  rate-constant: {A: 3.0043e+17, b: 1.0, Ea: 1.1497e+08}
+- equation: tCOOH(211) + OH(211) <=> CO2(211) + H2O(211)  # Reaction 81
+  id: Rh211-12
+  rate-constant: {A: 1.0871e+21, b: 1.0, Ea: 3.507e+07}
+- equation: tCOOH(211) + O(211) <=> CO2(211) + OH(211)  # Reaction 82
+  id: Rh211-13
+  rate-constant: {A: 3.7145e+17, b: 1.0, Ea: 1.4575e+07}
+- equation: OH(211) + OH(211) <=> H2O(211) + O(211)  # Reaction 83
+  id: Rh211-14
+  rate-constant: {A: 1.7472e+18, b: 1.0, Ea: 1.0297e+08}
+- equation: CO2(211) + H(211) <=> HCOO(211) + Rh(211)  # Reaction 84
+  id: Rh211-15
+  rate-constant: {A: 9.1936e+16, b: 1.0, Ea: 8.3924e+07}
+- equation: CO(211) + Rh(211) <=> C(211) + O(211)  # Reaction 85
+  id: Rh211-16
+  rate-constant: {A: 2.2603e+22, b: 1.0, Ea: 2.6387e+08}
+- equation: CH(211) + Rh(211) <=> C(211) + H(211)  # Reaction 86
+  id: Rh211-17
+  rate-constant: {A: 5.1441e+17, b: 1.0, Ea: 4.9573e+07}
+- equation: CH2(211) + Rh(211) <=> CH(211) + H(211)  # Reaction 87
+  id: Rh211-18
+  rate-constant: {A: 2.2674e+18, b: 1.0, Ea: 5.404e+07}
+- equation: CH3(211) + Rh(211) <=> CH2(211) + H(211)  # Reaction 88
+  id: Rh211-19
+  rate-constant: {A: 1.0606e+18, b: 1.0, Ea: 3.3198e+07}
+- equation: CH4 + Rh(211) + Rh(211) <=> CH3(211) + H(211)  # Reaction 89
+  id: Rh211-20
+  rate-constant: {A: 1.1529e+13, b: 1.0, Ea: 4.7391e+07}
+- equation: CO(211) + H(211) <=> OCH(211)  # Reaction 90
+  id: Rh211-21
+  rate-constant: {A: 9.938e+15, b: 1.0, Ea: 1.1064e+08}
+- equation: OCH(211) + O(211) <=> HCOO(211) + Rh(211)  # Reaction 91
+  id: Rh211-22
+  rate-constant: {A: 2.3293e+16, b: 1.0, Ea: 1.0916e+08}
+- equation: CH(211) + O(211) <=> OCH(211)  # Reaction 92
+  id: Rh211-23
+  rate-constant: {A: 9.5515e+15, b: 1.0, Ea: 1.1464e+08}
+
+Rh311-reactions:
+- equation: CO + Rh(311) <=> CO(311)  # Reaction 93
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh311-1
+- equation: CO2 + 2 Rh(311) <=> CO2(311)  # Reaction 94
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh311-2
+- equation: H2O + Rh(311) <=> H2O(311)  # Reaction 95
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh311-3
+- equation: H2 + Rh(311) + Rh(311) <=> H(311) + H(311)  # Reaction 96
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh311-4
+- equation: O2 + Rh(311) + Rh(311) <=> O(311) + O(311)  # Reaction 97
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh311-5
+- equation: CO2(311) <=> CO(311) + O(311)  # Reaction 98
+  id: Rh311-6
+  rate-constant: {A: 9.2259e+09, b: 1.0, Ea: 1.0678e+08}
+- equation: H2O(311) + Rh(311) <=> OH(311) + H(311)  # Reaction 99
+  id: Rh311-7
+  rate-constant: {A: 1.9183e+16, b: 1.0, Ea: 5.8979e+07}
+- equation: OH(311) + Rh(311) <=> O(311) + H(311)  # Reaction 100
+  id: Rh311-8
+  rate-constant: {A: 9.9969e+17, b: 1.0, Ea: 8.892e+07}
+- equation: CO2(311) + H(311) <=> tCOOH(311) + Rh(311)  # Reaction 101
+  id: Rh311-9
+  rate-constant: {A: 1.8315e+17, b: 1.0, Ea: 8.849e+07}
+- equation: cCOOH(311) <=> tCOOH(311)  # Reaction 102
+  id: Rh311-10
+  rate-constant: {A: 8.2553e+09, b: 1.0, Ea: 3.2005e+07}
+- equation: CO(311) + OH(311) <=> cCOOH(311)  # Reaction 103
+  id: Rh311-11
+  rate-constant: {A: 8.0495e+16, b: 1.0, Ea: 1.1288e+08}
+- equation: tCOOH(311) + OH(311) <=> CO2(311) + H2O(311)  # Reaction 104
+  id: Rh311-12
+  rate-constant: {A: 6.9416e+20, b: 1.0, Ea: 3.2449e+07}
+- equation: tCOOH(311) + O(311) <=> CO2(311) + OH(311)  # Reaction 105
+  id: Rh311-13
+  rate-constant: {A: 1.5955e+17, b: 1.0, Ea: 1.5958e+07}
+- equation: OH(311) + OH(311) <=> H2O(311) + O(311)  # Reaction 106
+  id: Rh311-14
+  rate-constant: {A: 1.3197e+18, b: 1.0, Ea: 1.0662e+08}
+- equation: CO2(311) + H(311) <=> HCOO(311) + Rh(311)  # Reaction 107
+  id: Rh311-15
+  rate-constant: {A: 8.0784e+16, b: 1.0, Ea: 8.6181e+07}
+- equation: CO(311) + Rh(311) <=> C(311) + O(311)  # Reaction 108
+  id: Rh311-16
+  rate-constant: {A: 2.2603e+22, b: 1.0, Ea: 2.6387e+08}
+- equation: CH(311) + Rh(311) <=> C(311) + H(311)  # Reaction 109
+  id: Rh311-17
+  rate-constant: {A: 5.1441e+17, b: 1.0, Ea: 4.9573e+07}
+- equation: CH2(311) + Rh(311) <=> CH(311) + H(311)  # Reaction 110
+  id: Rh311-18
+  rate-constant: {A: 2.2674e+18, b: 1.0, Ea: 5.404e+07}
+- equation: CH3(311) + Rh(311) <=> CH2(311) + H(311)  # Reaction 111
+  id: Rh311-19
+  rate-constant: {A: 1.0606e+18, b: 1.0, Ea: 3.3198e+07}
+- equation: CH4 + Rh(311) + Rh(311) <=> CH3(311) + H(311)  # Reaction 112
+  id: Rh311-20
+  rate-constant: {A: 1.1529e+13, b: 1.0, Ea: 4.7391e+07}
+- equation: CO(311) + H(311) <=> OCH(311)  # Reaction 113
+  id: Rh311-21
+  rate-constant: {A: 9.938e+15, b: 1.0, Ea: 1.1064e+08}
+- equation: OCH(311) + O(311) <=> HCOO(311) + Rh(311)  # Reaction 114
+  id: Rh311-22
+  rate-constant: {A: 2.3293e+16, b: 1.0, Ea: 1.0916e+08}
+- equation: CH(311) + O(311) <=> OCH(311)  # Reaction 115
+  id: Rh311-23
+  rate-constant: {A: 9.5515e+15, b: 1.0, Ea: 1.1464e+08}
+
+Rh331-reactions:
+- equation: CO + Rh(331) <=> CO(331)  # Reaction 116
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh331-1
+- equation: CO2 + 2 Rh(331) <=> CO2(331)  # Reaction 117
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh331-2
+- equation: H2O + Rh(331) <=> H2O(331)  # Reaction 118
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh331-3
+- equation: H2 + Rh(331) + Rh(331) <=> H(331) + H(331)  # Reaction 119
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 2.1906e+06}
+  id: Rh331-4
+- equation: O2 + Rh(331) + Rh(331) <=> O(331) + O(331)  # Reaction 120
+  sticking-coefficient: {A: 1.0, b: 0.0, Ea: 0.0}
+  id: Rh331-5
+- equation: CO2(331) <=> CO(331) + O(331)  # Reaction 121
+  id: Rh331-6
+  rate-constant: {A: 2.4794e+10, b: 1.0, Ea: 1.0479e+08}
+- equation: H2O(331) + Rh(331) <=> OH(331) + H(331)  # Reaction 122
+  id: Rh331-7
+  rate-constant: {A: 2.6996e+16, b: 1.0, Ea: 5.7535e+07}
+- equation: OH(331) + Rh(331) <=> O(331) + H(331)  # Reaction 123
+  id: Rh331-8
+  rate-constant: {A: 9.0049e+17, b: 1.0, Ea: 9.7535e+07}
+- equation: CO2(331) + H(331) <=> tCOOH(331) + Rh(331)  # Reaction 124
+  id: Rh331-9
+  rate-constant: {A: 1.1834e+18, b: 1.0, Ea: 1.0359e+08}
+- equation: cCOOH(331) <=> tCOOH(331)  # Reaction 125
+  id: Rh331-10
+  rate-constant: {A: 6.4082e+09, b: 1.0, Ea: 3.1865e+07}
+- equation: CO(331) + OH(331) <=> cCOOH(331)  # Reaction 126
+  id: Rh331-11
+  rate-constant: {A: 1.5047e+17, b: 1.0, Ea: 1.0192e+08}
+- equation: tCOOH(331) + OH(331) <=> CO2(331) + H2O(331)  # Reaction 127
+  id: Rh331-12
+  rate-constant: {A: 2.042e+18, b: 1.0, Ea: 0.0}
+- equation: tCOOH(331) + O(331) <=> CO2(331) + OH(331)  # Reaction 128
+  id: Rh331-13
+  rate-constant: {A: 1.8233e+17, b: 1.0, Ea: 9.3533e+06}
+- equation: OH(331) + OH(331) <=> H2O(331) + O(331)  # Reaction 129
+  id: Rh331-14
+  rate-constant: {A: 5.0847e+17, b: 1.0, Ea: 7.4453e+07}
+- equation: CO2(331) + H(331) <=> HCOO(331) + Rh(331)  # Reaction 130
+  id: Rh331-15
+  rate-constant: {A: 8.88e+17, b: 1.0, Ea: 9.6521e+07}
+- equation: CO(331) + Rh(331) <=> C(331) + O(331)  # Reaction 131
+  id: Rh331-16
+  rate-constant: {A: 2.2603e+22, b: 1.0, Ea: 2.6387e+08}
+- equation: CH(331) + Rh(331) <=> C(331) + H(331)  # Reaction 132
+  id: Rh331-17
+  rate-constant: {A: 5.1441e+17, b: 1.0, Ea: 4.9573e+07}
+- equation: CH2(331) + Rh(331) <=> CH(331) + H(331)  # Reaction 133
+  id: Rh331-18
+  rate-constant: {A: 2.2674e+18, b: 1.0, Ea: 5.404e+07}
+- equation: CH3(331) + Rh(331) <=> CH2(331) + H(331)  # Reaction 134
+  id: Rh331-19
+  rate-constant: {A: 1.0606e+18, b: 1.0, Ea: 3.3198e+07}
+- equation: CH4 + Rh(331) + Rh(331) <=> CH3(331) + H(331)  # Reaction 135
+  id: Rh331-20
+  rate-constant: {A: 1.1529e+13, b: 1.0, Ea: 4.7391e+07}
+- equation: CO(331) + H(331) <=> OCH(331)  # Reaction 136
+  id: Rh331-21
+  rate-constant: {A: 9.938e+15, b: 1.0, Ea: 1.1064e+08}
+- equation: OCH(331) + O(331) <=> HCOO(331) + Rh(331)  # Reaction 137
+  id: Rh331-22
+  rate-constant: {A: 2.3293e+16, b: 1.0, Ea: 1.0916e+08}
+- equation: CH(331) + O(331) <=> OCH(331)  # Reaction 138
+  id: Rh331-23
+  rate-constant: {A: 9.5515e+15, b: 1.0, Ea: 1.1464e+08}
+  
+# Edge reactions
+
+edge111-311-reactions:
+- equation: C(111) + Rh(311) <=> Rh(111) + C(311)           # Reaction 1
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 85}
+- equation: CH(111) + Rh(311) <=> Rh(111) + CH(311)         # Reaction 2
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 78}
+- equation: CH2(111) + Rh(311) <=> Rh(111) + CH2(311)       # Reaction 3
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 47}
+- equation: CH3(111) + Rh(311) <=> Rh(111) + CH3(311)       # Reaction 4
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 19}
+- equation: OCH(111) + Rh(311) <=> Rh(111) + OCH(311)       # Reaction 5
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 39}
+- equation: CO(111) + Rh(311) <=> Rh(111) + CO(311)         # Reaction 6
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 20}
+- equation: tCOOH(111) + Rh(311) <=> Rh(111) + tCOOH(311)   # Reaction 7
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 27}
+- equation: cCOOH(111) + Rh(311) <=> Rh(111) + cCOOH(311)   # Reaction 8
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 27}
+- equation: H(111) + Rh(311) <=> Rh(111) + H(311)           # Reaction 9
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 30}
+- equation: H2O(111) + Rh(311) <=> Rh(111) + H2O(311)       # Reaction 10
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 2}
+- equation: HCOO(111) + Rh(311) <=> Rh(111) + HCOO(311)     # Reaction 11
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 23}
+- equation: O(111) + Rh(311) <=> Rh(111) + O(311)           # Reaction 12
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 52}
+- equation: OH(111) + Rh(311) <=> Rh(111) + OH(311)         # Reaction 13
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 34}
+- equation: CO2(111) + Rh(311) <=> Rh(111) + CO2(311)       # Reaction 14
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 10}
+  
+edge111-331-reactions:
+- equation: C(111) + Rh(331) <=> Rh(111) + C(331)           # Reaction 1
+  id: edge111-331
+  rate-constant: {A: 1e16, b: 0, Ea: 85}
+- equation: CH(111) + Rh(331) <=> Rh(111) + CH(331)         # Reaction 2
+  id: edge111-331
+  rate-constant: {A: 1e16, b: 0, Ea: 78}
+- equation: CH2(111) + Rh(331) <=> Rh(111) + CH2(331)       # Reaction 3
+  id: edge111-331
+  rate-constant: {A: 1e16, b: 0, Ea: 47}
+- equation: CH3(111) + Rh(331) <=> Rh(111) + CH3(331)       # Reaction 4
+  id: edge111-331
+  rate-constant: {A: 1e16, b: 0, Ea: 19}
+- equation: OCH(111) + Rh(331) <=> Rh(111) + OCH(331)       # Reaction 5
+  id: edge111-331
+  rate-constant: {A: 1e16, b: 0, Ea: 39}
+- equation: CO(111) + Rh(331) <=> Rh(111) + CO(331)         # Reaction 6
+  id: edge111-331
+  rate-constant: {A: 1e16, b: 0, Ea: 20}
+- equation: tCOOH(111) + Rh(331) <=> Rh(111) + tCOOH(331)   # Reaction 7
+  id: edge111-311
+  rate-constant: {A: 1e16, b: 0, Ea: 27}
+- equation: cCOOH(111) + Rh(331) <=> Rh(111) + cCOOH(331)   # Reaction 8
+  id: edge111-331
+  rate-constant: {A: 1e16, b: 0, Ea: 27}
+- equation: H(111) + Rh(331) <=> Rh(111) + H(331)           # Reaction 9
+  id: edge111-331
+  rate-constant: {A: 1e16, b: 0, Ea: 30}
+- equation: H2O(111) + Rh(331) <=> Rh(111) + H2O(331)       # Reaction 10
+  id: edge111-331
+  rate-constant: {A: 1e16, b: 0, Ea: 2}
+- equation: HCOO(111) + Rh(331) <=> Rh(111) + HCOO(331)     # Reaction 11
+  id: edge111-331
+  rate-constant: {A: 1e16, b: 0, Ea: 23}
+- equation: O(111) + Rh(331) <=> Rh(111) + O(331)           # Reaction 12
+  id: edge111-331
+  rate-constant: {A: 1e16, b: 0, Ea: 52}
+- equation: OH(111) + Rh(331) <=> Rh(111) + OH(331)         # Reaction 13
+  id: edge111-331
+  rate-constant: {A: 1e16, b: 0, Ea: 34}
+- equation: CO2(111) + Rh(331) <=> Rh(111) + CO2(331)       # Reaction 14
+  id: edge111-331
+  rate-constant: {A: 1e16, b: 0, Ea: 10}
+  
+edge110-331-reactions:
+- equation: C(110) + Rh(331) <=> Rh(110) + C(331)           # Reaction 1
+  id: edge110-331
+  rate-constant: {A: 1e16, b: 0, Ea: 87}
+- equation: CH(110) + Rh(331) <=> Rh(110) + CH(331)         # Reaction 2
+  id: edge110-331
+  rate-constant: {A: 1e16, b: 0, Ea: 73}
+- equation: CH2(110) + Rh(331) <=> Rh(110) + CH2(331)       # Reaction 3
+  id: edge110-331
+  rate-constant: {A: 1e16, b: 0, Ea: 47}
+- equation: CH3(110) + Rh(331) <=> Rh(110) + CH3(331)       # Reaction 4
+  id: edge110-331
+  rate-constant: {A: 1e16, b: 0, Ea: 22}
+- equation: OCH(110) + Rh(331) <=> Rh(110) + OCH(331)       # Reaction 5
+  id: edge110-331
+  rate-constant: {A: 1e16, b: 0, Ea: 39}
+- equation: CO(110) + Rh(331) <=> Rh(110) + CO(331)         # Reaction 6
+  id: edge110-331
+  rate-constant: {A: 1e16, b: 0, Ea: 22}
+- equation: tCOOH(110) + Rh(331) <=> Rh(110) + tCOOH(331)   # Reaction 7
+  id: edge110-331
+  rate-constant: {A: 1e16, b: 0, Ea: 26}
+- equation: cCOOH(110) + Rh(331) <=> Rh(110) + cCOOH(331)   # Reaction 8
+  id: edge110-331
+  rate-constant: {A: 1e16, b: 0, Ea: 26}
+- equation: H(110) + Rh(331) <=> Rh(110) + H(331)           # Reaction 9
+  id: edge110-331
+  rate-constant: {A: 1e16, b: 0, Ea: 29}
+- equation: H2O(110) + Rh(331) <=> Rh(110) + H2O(331)       # Reaction 10
+  id: edge110-331
+  rate-constant: {A: 1e16, b: 0, Ea: 4}
+- equation: HCOO(110) + Rh(331) <=> Rh(110) + HCOO(331)     # Reaction 11
+  id: edge110-331
+  rate-constant: {A: 1e16, b: 0, Ea: 28}
+- equation: O(110) + Rh(331) <=> Rh(110) + O(331)           # Reaction 12
+  id: edge110-331
+  rate-constant: {A: 1e16, b: 0, Ea: 53}
+- equation: OH(110) + Rh(331) <=> Rh(110) + OH(331)         # Reaction 13
+  id: edge110-331
+  rate-constant: {A: 1e16, b: 0, Ea: 38}
+- equation: CO2(110) + Rh(331) <=> Rh(110) + CO2(331)       # Reaction 14
+  id: edge110-331
+  rate-constant: {A: 1e16, b: 0, Ea: 10}
+  
+edge100-311-reactions:
+- equation: C(100) + Rh(311) <=> Rh(100) + C(311)           # Reaction 1
+  id: edge100-311
+  rate-constant: {A: 1e16, b: 0, Ea: 97}
+- equation: CH(100) + Rh(311) <=> Rh(100) + CH(311)         # Reaction 2
+  id: edge100-311
+  rate-constant: {A: 1e16, b: 0, Ea: 84}
+- equation: CH2(100) + Rh(311) <=> Rh(100) + CH2(311)       # Reaction 3
+  id: edge100-311
+  rate-constant: {A: 1e16, b: 0, Ea: 50}
+- equation: CH3(100) + Rh(311) <=> Rh(100) + CH3(311)       # Reaction 4
+  id: edge100-311
+  rate-constant: {A: 1e16, b: 0, Ea: 22}
+- equation: OCH(100) + Rh(311) <=> Rh(100) + OCH(311)       # Reaction 5
+  id: edge100-311
+  rate-constant: {A: 1e16, b: 0, Ea: 35}
+- equation: CO(100) + Rh(311) <=> Rh(100) + CO(311)         # Reaction 6
+  id: edge100-311
+  rate-constant: {A: 1e16, b: 0, Ea: 23}
+- equation: tCOOH(100) + Rh(311) <=> Rh(100) + tCOOH(311)   # Reaction 7
+  id: edge100-311
+  rate-constant: {A: 1e16, b: 0, Ea: 29}
+- equation: cCOOH(100) + Rh(311) <=> Rh(100) + cCOOH(311)   # Reaction 8
+  id: edge100-311
+  rate-constant: {A: 1e16, b: 0, Ea: 29}
+- equation: H(100) + Rh(311) <=> Rh(100) + H(311)           # Reaction 9
+  id: edge100-311
+  rate-constant: {A: 1e16, b: 0, Ea: 30}
+- equation: H2O(100) + Rh(311) <=> Rh(100) + H2O(311)       # Reaction 10
+  id: edge100-311
+  rate-constant: {A: 1e16, b: 0, Ea: 3}
+- equation: HCOO(100) + Rh(311) <=> Rh(100) + HCOO(311)     # Reaction 11
+  id: edge100-311
+  rate-constant: {A: 1e16, b: 0, Ea: 34}
+- equation: O(100) + Rh(311) <=> Rh(100) + O(311)           # Reaction 12
+  id: edge100-311
+  rate-constant: {A: 1e16, b: 0, Ea: 53}
+- equation: OH(100) + Rh(311) <=> Rh(100) + OH(311)         # Reaction 13
+  id: edge100-311
+  rate-constant: {A: 1e16, b: 0, Ea: 38}
+- equation: CO2(100) + Rh(311) <=> Rh(100) + CO2(311)       # Reaction 14
+  id: edge100-311
+  rate-constant: {A: 1e16, b: 0, Ea: 10}
