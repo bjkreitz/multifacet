@@ -1,5 +1,6 @@
 name = '*O_39'
 composition = {'H':0, 'C':0, 'N':0, 'O':1, 'Pt':1}
+facet = ['Ni110']
 coverage = 3
 DFT_energy = [-84.420, 'eV']
 ZPE_energy = [0.205, 'eV']
