@@ -1,0 +1,12 @@
+name = '*O_29'
+composition = {'H':0, 'C':0, 'N':0, 'O':1, 'Pt':1}
+facet = ['Ni100']
+coverage = 2
+DFT_energy = [-87.281, 'eV']
+ZPE_energy = [0.126, 'eV']
+frequencies = [313.1, 324.8, 334.5, 337.6, 346.2, 368.6, 'cm-1']
+gas_DFT_energy = [-5.484344, 'eV']
+gas_ZPE_energy = [0.099, 'eV']
+sites = 1
+BEE = []
+gas_BEE = []

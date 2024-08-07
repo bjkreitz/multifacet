@@ -1,0 +1,12 @@
+name = '*CO_19'
+composition = {'H':0, 'C':1, 'N':0, 'O':1, 'Pt':1}
+facet = ['Ni110']
+coverage = 1
+DFT_energy = [-82.141, 'eV']
+ZPE_energy = [0.187, 'eV']
+frequencies = [66.5, 153.4, 271.3, 339.5, 343.1, 1838.3, 'cm-1']
+gas_DFT_energy = [-12.06623, 'eV']
+gas_ZPE_energy = [0.133, 'eV']
+sites = 1
+BEE = []
+gas_BEE = []

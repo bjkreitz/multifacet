@@ -1,0 +1,12 @@
+name = '*CO_39'
+composition = {'H':0, 'C':1, 'N':0, 'O':1, 'Pt':1}
+facet = ['Ni100']
+coverage = 3
+DFT_energy = [-116.800, 'eV']
+ZPE_energy = [0.505, 'eV']
+frequencies = [140.8, 145.5, 147.8, 153.9, 164.9, 172.0, 226.9, 227.9, 236.6, 239.2, 240.4, 248.0, 260.0, 266.1, 266.7, 1655.1, 1655.4, 1693.2, 'cm-1']
+gas_DFT_energy = [-12.06623, 'eV']
+gas_ZPE_energy = [0.133, 'eV']
+sites = 1
+BEE = []
+gas_BEE = []
