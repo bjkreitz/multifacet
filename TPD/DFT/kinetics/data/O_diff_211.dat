@@ -1,0 +1,12 @@
+name = 'O_diff'
+composition = {'H':0, 'C':0, 'N':0, 'O':1, 'Pt':1}
+facet = ['Ni211'] 
+IS_SPE =[-84.879429, 'eV']
+IS_ZPE =[0.079, 'eV']
+IS_frequencies=[391.4, 392.0, 485.4, 'cm-1']
+TST_SPE=[-83.67159669, 'eV']
+TST_ZPE=[0.057, 'eV']
+TST_frequencies=[421.4, 495.2, 'cm-1']
+no_reactants=1
+bee_IS = []
+bee_TS =[]

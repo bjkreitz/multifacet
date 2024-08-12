@@ -1,0 +1,12 @@
+name = 'CO_diff'
+composition = {'H':0, 'C':1, 'N':0, 'O':1, 'Pt':1}
+facet = ['Ni100'] 
+IS_SPE =[-89.466, 'eV']
+IS_ZPE =[0.165, 'eV']
+IS_frequencies=[133.6, 142.4, 239.0, 244.3, 278.4, 1630.3, 'cm-1']
+TST_SPE=[-89.37879377, 'eV']
+TST_ZPE=[0.169, 'eV']
+TST_frequencies=[157.5, 183.7, 285.5, 346.3, 1751.1, 'cm-1']
+no_reactants=1
+bee_IS = []
+bee_TS =[]
