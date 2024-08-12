@@ -1,0 +1,12 @@
+name = 'OC-O'
+composition = {'H':0, 'C':1, 'N':0, 'O':2, 'Pt':1}
+facet = ['Ni111'] 
+IS_SPE =[, 'eV']
+IS_ZPE =[, 'eV']
+IS_frequencies=[, 'cm-1']
+TST_SPE=[, 'eV']
+TST_ZPE=[, 'eV']
+TST_frequencies=[, 'cm-1']
+no_reactants=1
+bee_IS = []
+bee_TS =[]
