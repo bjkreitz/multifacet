@@ -230,9 +230,9 @@ species:
     - [2.89482689E+00, -3.67789499E-04, 6.97988290E-07, -3.97248483E-10, 7.48154293E-14, -3.13854714E+04, -1.53122812E+01]
   coverage-dependencies:
     O(111): {model: polynomial,
-             units: {energy: kJ, quantity: mol},
-             enthalpy-coefficients: [26.871, 126.028, 0.0, 0.0],
-             entropy-coefficients: [-0.0021, 0.00102, 0.0, 0.0]
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [0.278, 1.306, 0.0, 0.0],
+             entropy-coefficients: [1.89e-05, -2.95e-05, 0.0, 0.0]
             }
 - name: OC(111)
   composition: {C: 1, O: 1}
@@ -244,9 +244,9 @@ species:
     - [5.52988084E+00, -1.51352494E-03, 2.77222521E-06, -1.52990621E-09, 2.81445856E-13, -3.73952647E+04, -2.66913342E+01]
   coverage-dependencies:
     OC(111): {model: polynomial,
-             units: {energy: kJ, quantity: mol},
-             enthalpy-coefficients: [-64.409, 213.132, 0.0, 0.0],
-             entropy-coefficients: [0.00581, -0.02679, 0.0, 0.0]
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [-0.668,2.209, 0.0, 0.0],
+             entropy-coefficients: [8.480e-05, -3.086e-04, 0.0, 0.0]
            }
 - name: C(111)
   composition: {C: 1}
@@ -282,9 +282,9 @@ species:
     - [2.89858647E+00, -3.66686920E-04, 6.91987097E-07, -3.93031566E-10, 7.39329299E-14, -3.00728199E+04, -1.42343728E+01]
   coverage-dependencies:
     O(211): {model: polynomial,
-             units: {energy: kJ, quantity: mol},
-             enthalpy-coefficients: [67.809, 69.937, 0.0, 0.0],
-             entropy-coefficients: [-0.00483, -0.0046, 0.0, 0.0]
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [0.703,0.725, 0.0, 0.0],
+             entropy-coefficients: [-1.52e-05, -8.89e-05, 0.0, 0.0]
             }
 - name: OC(211)
   composition: {C: 1, O: 1}
@@ -296,9 +296,9 @@ species:
     - [5.49422791E+00, -1.58314029E-03, 2.89347098E-06, -1.59141636E-09, 2.91950750E-13, -3.69934377E+04, -2.42080163E+01]
   coverage-dependencies:
     OC(211): {model: polynomial,
-             units: {energy: kJ, quantity: mol},
-             enthalpy-coefficients: [-47.518, 163.441, 0.0, 0.0],
-             entropy-coefficients: [-0.05889, 0.03523, 0.0, 0.0]
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [-0.492, 1.694, 0.0, 0.0],
+             entropy-coefficients: [-0.000622, 0.0003879, 0.0, 0.0]
            }
 - name: C(211)
   composition: {C: 1}
@@ -334,9 +334,9 @@ species:
     - [2.93156493E+00, -2.30016077E-04, 4.39395942E-07, -2.50634542E-10, 4.72630376E-14, -3.51016649E+04, -1.49534864E+01]
   coverage-dependencies:
     O(100): {model: polynomial,
-             units: {energy: kJ, quantity: mol},
-             enthalpy-coefficients: [17.122, 132.535, 0.0, 0.0],
-             entropy-coefficients: [-0.00033, -0.00151, 0.0, 0.0]
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [0.177, 1.374, 0.0, 0.0],
+             entropy-coefficients: [-3.90e-06, -3.45e-05, 0.0, 0.0]
             }
 - name: OC(100)
   composition: {C: 1, O: 1}
@@ -348,9 +348,9 @@ species:
     - [5.59470038E+00, -1.35913188E-03, 2.49337545E-06, -1.38111491E-09, 2.54862314E-13, -3.75081601E+04, -2.65063613E+01]
   coverage-dependencies:
     OC(100): {model: polynomial,
-             units: {energy: kJ, quantity: mol},
-             enthalpy-coefficients: [-47.865, 133.096, 0.0, 0.0],
-             entropy-coefficients: [0.00521, -0.02377, 0.0, 0.0]
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [-0.496, 1.379, 0.0, 0.0],
+             entropy-coefficients: [2.970e-05, -2.105e-04, 0.0, 0.0]
            }
 - name: C(100)
   composition: {C: 1}
@@ -386,9 +386,9 @@ species:
     - [2.90283723E+00, -3.49097282E-04, 6.59501820E-07, -3.74729282E-10, 7.05066352E-14, -2.96008866E+04, -1.43423599E+01]
   coverage-dependencies:
     O(110): {model: polynomial,
-             units: {energy: kJ, quantity: mol},
-             enthalpy-coefficients: [-4.867, 83.59, 0.0, 0.0],
-             entropy-coefficients: [0.00237, -0.00198, 0.0, 0.0]
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [-0.05, 0.866, 0.0, 0.0],
+             entropy-coefficients: [3.09e-05, -4.24e-05, 0.0, 0.0]
             }
 - name: OC(110)
   composition: {C: 1, O: 1}
@@ -400,9 +400,9 @@ species:
     - [5.50350832E+00, -1.56676455E-03, 2.86534065E-06, -1.57749947E-09, 2.89631494E-13, -3.77518428E+04, -2.59042938E+01]
   coverage-dependencies:
     OC(110): {model: polynomial,
-             units: {energy: kJ, quantity: mol},
-             enthalpy-coefficients: [-0.215, 17.813, 0.0, 0.0],
-             entropy-coefficients: [0.01969, -0.03129, 0.0, 0.0]
+             units: {energy: eV, quantity: molec},
+             enthalpy-coefficients: [-0.002, 0.185, 0.0, 0.0],
+             entropy-coefficients: [0.0001748, -0.0002934, 0.0, 0.0]
            }
 - name: C(110)
   composition: {C: 1}
