@@ -40,7 +40,7 @@ phases:
   reference-state-coverage: 0.11
   adjacent-phases: [gas]
   site-density: 3.08e-09
-- name: surface2
+- name: surface3
   thermo: coverage-dependent-surface
   elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
   species: [site(211), O(211), OC(211), C(211), CO2(211)]
@@ -52,7 +52,7 @@ phases:
   reference-state-coverage: 0.11
   adjacent-phases: [gas]
   site-density: 3.26e-09
-- name: surface3
+- name: surface2
   thermo: coverage-dependent-surface
   elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
   species: [site(100), O(100), OC(100), C(100), CO2(100)]
@@ -431,17 +431,14 @@ surface1-reactions:
 - equation: site(111) + CO <=> OC(111)  # Reaction 3
   sticking-coefficient: {A: 0.8, b: 0.0, Ea: 0.0}
   id: Ni(111)
-#- equation: CO2(111) + site(111) <=> O(111) + OC(111) # Reaction 4
-  #rate-constant: {A: 1.82e+20, b: 0.0, Ea: 80.2}
-#  id: Ni(111)
-- equation: O(111) + OC(111) <=> CO2(111) + site(111)  # Reaction 4
-  rate-constant: {A: 1.005e+23, b: 0.0, Ea: 147.093} #reverse
+- equation: CO2(111) + site(111) <=> O(111) + OC(111) # Reaction 4
+  rate-constant: {A: 1.82e+20, b: 0.0, Ea: 80.2}
   id: Ni(111)
 - equation: OC(111) + site(111) <=> C(111) + O(111)  # Reaction 5
   rate-constant: {A: 7.21e+20, b: 0.0, Ea: 288.5}
   id: Ni(111)
 
-surface2-reactions:
+surface3-reactions:
 - equation: site(211) + site(211) + O2 <=> O(211) + O(211)  # Reaction 6
   sticking-coefficient: {A: 0.5, b: 0.0, Ea: 0}
   id: Ni(211)
@@ -451,17 +448,14 @@ surface2-reactions:
 - equation: site(211) + CO <=> OC(211)  # Reaction 8
   sticking-coefficient: {A: 0.8, b: 0.0, Ea: 0.0}
   id: Ni(211)
-#- equation: CO2(211) + site(211) <=>  O(211) + OC(211) # Reaction 9
-#  rate-constant: {A: 1.57e+21, b: 0.0, Ea: 50.6}
-#  id: Ni(211)
-- equation: O(211) + OC(211) <=> CO2(211) + site(211)  # Reaction 4
-  rate-constant: {A: 4.323e+21, b: 0.0, Ea: 94.655} #reverse
+- equation: CO2(211) + site(211) <=>  O(211) + OC(211) # Reaction 9
+  rate-constant: {A: 1.57e+21, b: 0.0, Ea: 50.6}
   id: Ni(211)
 - equation: OC(211) + site(211) <=> C(211) + O(211)  # Reaction 10
   rate-constant: {A: 4.35e+19, b: 0.0, Ea: 197.5}
   id: Ni(211)
 
-surface3-reactions:
+surface2-reactions:
 - equation: site(100) + site(100) + O2 <=> O(100) + O(100)  # Reaction 11
   sticking-coefficient: {A: 0.63, b: 0.0, Ea: 0}
   id: Ni(100)
@@ -471,11 +465,8 @@ surface3-reactions:
 - equation: site(100) + CO <=> OC(100)  # Reaction 13
   sticking-coefficient: {A: 0.8, b: 0.0, Ea: 0.0}
   id: Ni(100)
-#- equation: CO2(100) + site(100) <=> O(100) + OC(100) # Reaction 14
-#  rate-constant: {A: 2.22e+18, b: 0.0, Ea: 26.1}
-#  id: Ni(100)
-- equation: O(100) + OC(100) <=> CO2(100) + site(100)  # Reaction 4
-  rate-constant: {A: 9.842e+20, b: 0.0, Ea: 123.335} #reverse
+- equation: CO2(100) + site(100) <=> O(100) + OC(100) # Reaction 14
+  rate-constant: {A: 2.22e+18, b: 0.0, Ea: 26.1}
   id: Ni(100)
 - equation: OC(100) + site(100) <=> C(100) + O(100)  # Reaction 15
   rate-constant: {A: 3.08e+20, b: 0.0, Ea: 185.8}
@@ -491,11 +482,8 @@ surface4-reactions:
 - equation: site(110) + CO <=> OC(110)  # Reaction 18
   sticking-coefficient: {A: 0.8, b: 0.0, Ea: 0.0}
   id: Ni(110)
-#- equation: CO2(110) + site(110) <=> O(110) + OC(110)  # Reaction 19
-#  rate-constant: {A: 5.08e+21, b: 0.0, Ea: 71.1}
-#  id: Ni(110)
-- equation: O(110) + OC(110) <=> CO2(110) + site(110)  # Reaction 4
-  rate-constant: {A: 1.074e+23, b: 0.0, Ea: 107.31} #reverse
+- equation: CO2(110) + site(110) <=> O(110) + OC(110)  # Reaction 19
+  rate-constant: {A: 5.08e+21, b: 0.0, Ea: 71.1}
   id: Ni(110)
 - equation: OC(110) + site(110) <=> C(110) + O(110)  # Reaction 20
   rate-constant: {A: 8.58e+20, b: 0.0, Ea: 199.9}
