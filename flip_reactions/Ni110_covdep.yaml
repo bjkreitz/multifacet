@@ -21,7 +21,7 @@ phases:
 - name: gas
   thermo: ideal-gas
   elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
-  species: [Ar, He, CO2, H2, CO, O2]
+  species: [Ar, He, CO2, CO, O2]
   kinetics: gas
   reactions: none
   transport: mixture-averaged
@@ -29,18 +29,24 @@ phases:
     T: 300.0
     P: 1.01325e+05
 - name: surface1
-  thermo: ideal-surface
+  thermo: coverage-dependent-surface
   elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
-  species: [site(110), O(110), OC(110), C(110), CO2(110), H(110)]
+  species: [site(110), O(110), OC(110), C(110), CO2(110)]
   kinetics: surface
   reactions: [surface1-reactions]
   state:
     T: 300.0
     P: 1.01325e+05
+  reference-state-coverage: 0.11
   adjacent-phases: [gas]
-  site-density: 1.94e-09
-
+  site-density: 1.88e-09
+  
 species:
+- name: (tpb)
+  composition: {}
+  thermo:
+    model: constant-cp
+  note: dummy species
 - name: Ar
   composition: {Ar: 1}
   thermo:
@@ -67,24 +73,6 @@ species:
     geometry: atom
     diameter: 2.576
     well-depth: 10.2
-- name: H2
-  composition: {H: 2}
-  thermo:
-    model: NASA7
-    temperature-ranges: [200.0, 1000.0, 6000.0]
-    data:
-    - [2.37694204, 7.73916922e-03, -1.88735073e-05, 1.95517114e-08, -7.17095663e-12,
-      -921.173081, 0.547184736]
-    - [2.90207649, 8.68992581e-04, -1.6586443e-07, 1.90851899e-11, -9.31121789e-16,
-      -797.948726, -0.84559132]
-  transport:
-    model: gas
-    geometry: linear
-    diameter: 2.92
-    well-depth: 38.0
-    polarizability: 0.79
-    rotational-relaxation: 280.0
-  note: ATcT3E
 - name: CO2
   composition: {C: 1, O: 2}
   thermo:
@@ -153,59 +141,59 @@ species:
     model: NASA7
     temperature-ranges: [300.0, 1000.0, 2000.0]
     data:
-    - [0.0468621365, 0.0124843994, -2.2101002e-05, 1.82124482e-08, -5.73312231e-12,
-      -2.897157413278758e+04, -0.925058794]
-    - [2.90337972, -3.4656432e-04, 6.54885675e-07, -3.72138089e-10, 7.00224179e-14,
-      -2.9512388132787582e+04, -14.4600874]
+    - [4.41172522E-02, 1.24720144E-02, -2.20480043E-05, 1.81496811E-08, -5.70878934E-12, -2.90587971E+04, -7.92359956E-01]
+    - [2.90283723E+00, -3.49097282E-04, 6.59501820E-07, -3.74729282E-10, 7.05066352E-14, -2.96008866E+04, -1.43423599E+01]
+  coverage-dependencies:
+    O(110): {model: polynomial,
+             units: {energy: kJ, quantity: mol},
+             enthalpy-coefficients: [-4.867, 83.59, 0.0, 0.0],
+             entropy-coefficients: [0.00237, -0.00198, 0.0, 0.0]
+            }
 - name: OC(110)
   composition: {C: 1, O: 1}
   thermo:
     model: NASA7
     temperature-ranges: [300.0, 1000.0, 2000.0]
     data:
-    - [2.82400742, 8.22905134e-03, -1.22438785e-05, 1.00328004e-08, -3.32315252e-12,
-      -3.0287396726379287e+04, -10.8858217]
-    - [5.50817819, -1.56170089e-03, 2.85750031e-06, -1.57439308e-09, 2.892436e-13,
-      -3.0930665126379285e+04, -24.2213882]
+    - [2.85528595E+00, 8.14097430E-03, -1.22159161E-05, 1.00993053E-08, -3.36543293E-12, -3.71185926E+04, -1.27566343E+01]
+    - [5.50350832E+00, -1.56676455E-03, 2.86534065E-06, -1.57749947E-09, 2.89631494E-13, -3.77518428E+04, -2.59042938E+01]
+  coverage-dependencies:
+    OC(110): {model: polynomial,
+             units: {energy: kJ, quantity: mol},
+             enthalpy-coefficients: [-0.215, 17.813, 0.0, 0.0],
+             entropy-coefficients: [0.01969, -0.03129, 0.0, 0.0]
+           }
 - name: C(110)
   composition: {C: 1}
   thermo:
     model: NASA7
     temperature-ranges: [300.0, 1000.0, 2000.0]
     data:
-    - [-0.802275874, 0.0162513063, -2.89888968e-05, 2.40188741e-08, -7.59141361e-12,
-      9716.672506408295, 2.03019198]
-    - [2.87941509, -4.28521538e-04, 8.11047842e-07, -4.61148292e-10, 8.68010233e-14,
-      9025.943236408295, -15.3817189]
+    - [-7.21719575E-01, 1.59851721E-02, -2.86103462E-05, 2.37621721E-08, -7.52355470E-12, 3.48656985E+03, 1.66929615E+00]
+    - [2.88363255E+00, -4.11692019E-04, 7.79789121E-07, -4.43498364E-10, 8.34924720E-14, 2.81294619E+03, -1.53670025E+01]
 - name: CO2(110)
   composition: {C: 1, O: 2}
   thermo:
     model: NASA7
     temperature-ranges: [300.0, 1000.0, 2000.0]
     data:
-    - [2.0906068, 0.0140746384, -1.60771306e-05, 9.62001993e-09, -2.41739788e-12,
-      -5.274454045916686e+04, -2.523191]
-    - [7.27801335, -2.52228283e-03, 4.63555729e-06, -2.57785614e-09, 4.77304925e-13,
-      -5.406718725916686e+04, -28.7736657]
-- name: H(110)
-  composition: {H: 1}
-  thermo:
-    model: NASA7
-    temperature-ranges: [300.0, 1000.0, 2000.0]
-    data:
-    - [0.0855425711, 2.74028953e-03, 4.58510455e-06, -8.42936697e-09, 3.5844396e-12,
-      -5582.455602739705, -0.413770664]
-    - [2.56280759, -1.66121357e-03, 3.05348094e-06, -1.70635588e-09, 3.1729019e-13,
-      -6375.750762739705, -13.7830126]
+    - [1.82839576E+00, 1.51037235E-02, -1.80030222E-05, 1.13242848E-08, -2.98733954E-12, -6.08831098E+04, -2.14412576E+00]
+    - [7.25247418E+00, -2.59525685E-03, 4.76911326E-06, -2.65093887E-09, 4.90650581E-13, -6.22502020E+04, -2.95105092E+01]
 
 surface1-reactions:
-- equation: site(110) + site(110) + H2 <=> H(110) + H(110)  # Reaction 1
-  sticking-coefficient: {A: 0.1, b: 0.0, Ea: 3.8}
+- equation: site(110) + site(110) + O2 <=> O(110) + O(110)  # Reaction 1
+  sticking-coefficient: {A: 0.78, b: 0.0, Ea: 0}
+  id: Ni(110)
 - equation: site(110) + CO2 <=> CO2(110)  # Reaction 2
   sticking-coefficient: {A: 0.14, b: 0.0, Ea: 0}
-- equation: OC(110) <=> CO + site(110)  # Reaction 3
-  rate-constant: {A: 4869000000000000.0, b: 0.0, Ea: 125.978} #reverse
+  id: Ni(110)
+- equation: site(110) + CO <=> OC(110)  # Reaction 3
+  sticking-coefficient: {A: 0.8, b: 0.0, Ea: 0.0}
+  id: Ni(110)
 - equation: O(110) + OC(110) <=> CO2(110) + site(110)  # Reaction 4
-  rate-constant: {A: 5.91e+21, b: 0.0, Ea: 85.931} #reverse
+  rate-constant: {A: 1.074e+23, b: 0.0, Ea: 107.31} #reverse
+  id: Ni(110)
 - equation: OC(110) + site(110) <=> C(110) + O(110)  # Reaction 5
-  rate-constant: {A: 5.893e+20, b: 0.0, Ea: 249.748} #reverse
+  rate-constant: {A: 8.58e+20, b: 0.0, Ea: 199.9}
+  id: Ni(110)
+ 
