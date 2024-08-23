@@ -29,7 +29,7 @@ phases:
     T: 300.0
     P: 1.01325e+05
 - name: surface1
-  thermo: coverage-dependent-surface
+  thermo: ideal-surface
   elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
   species: [site(111), O(111), OC(111), C(111), CO2(111)]
   kinetics: surface
@@ -41,7 +41,7 @@ phases:
   adjacent-phases: [gas]
   site-density: 3.08e-09
 - name: surface2
-  thermo: coverage-dependent-surface
+  thermo: ideal-surface
   elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
   species: [site(211), O(211), OC(211), C(211), CO2(211)]
   kinetics: surface
@@ -53,7 +53,7 @@ phases:
   adjacent-phases: [gas]
   site-density: 3.26e-09
 - name: surface3
-  thermo: coverage-dependent-surface
+  thermo: ideal-surface
   elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
   species: [site(100), O(100), OC(100), C(100), CO2(100)]
   kinetics: surface
@@ -65,7 +65,7 @@ phases:
   adjacent-phases: [gas]
   site-density: 2.67e-09
 - name: surface4
-  thermo: coverage-dependent-surface
+  thermo: ideal-surface
   elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
   species: [site(110), O(110), OC(110), C(110), CO2(110)]
   kinetics: surface
