@@ -1,0 +1,170 @@
+description: |-
+  nits(length='cm', time='s', quantity='mol', act_energy='kcal/mol')
+
+generator: cti2yaml
+cantera-version: 3.0.0
+date: Tue, 14 Nov 2023 11:28:09 -0500
+input-files: [chem_polynomials.cti]
+
+units: {length: cm, quantity: mol, activation-energy: kcal/mol}
+
+elements:
+- symbol: Ci
+  atomic-weight: 13.003
+- symbol: D
+  atomic-weight: 2.014
+- symbol: Oi
+  atomic-weight: 17.999
+- symbol: T
+  atomic-weight: 3.016
+- symbol: X
+  atomic-weight: 195.083
+
+phases:
+- name: gas
+  thermo: ideal-gas
+  elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, F, Cl, Br, I,
+    X]
+  species: [Ar, He, Ne, N2, O2, CO, OCX_111, OX_111, OCX_100, OX_100
+  , OCX_110, OX_110, OCX_211, OX_211]
+  kinetics: gas
+  reactions: none
+  state:
+    T: 300.0
+    P: 1.01325e+05
+
+species:
+- name: Ar
+  composition: {Ar: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.37967]
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.37967]
+- name: He
+  composition: {He: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 0.928724]
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 0.928724]
+- name: Ne
+  composition: {Ne: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 3.35532]
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 3.35532]
+- name: N2
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53101, -1.23661e-04, -5.02999e-07, 2.43531e-09, -1.40881e-12, -1046.98,
+      2.96747]
+    - [2.95258, 1.3969e-03, -4.92632e-07, 7.8601e-11, -4.60755e-15, -923.949,
+      5.87189]
+- name: O2
+  composition: {O: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.78498258, -3.02002233e-03, 9.92029171e-06, -9.77840434e-09, 3.28877702e-12,
+      -1064.13589, 3.64780709]
+    - [3.65980488, 6.59877372e-04, -1.44158172e-07, 2.14656037e-11, -1.36503784e-15,
+      -1216.03048, 3.42074148]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.458
+    well-depth: 107.4
+    polarizability: 1.6
+    rotational-relaxation: 3.8
+  note: ATcT3E
+- name: CO
+  composition: {C: 1, O: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.59508377, -7.21196937e-04, 1.28238234e-06, 6.52429293e-10, -8.21714806e-13,
+      -1.43448968e+04, 3.44355598]
+    - [3.03397274, 1.37328118e-03, -4.96445087e-07, 8.10281447e-11, -4.85331749e-15,
+      -1.42586044e+04, 6.10076092]
+  transport:
+    model: gas
+    geometry: linear
+    diameter: 3.65
+    well-depth: 98.1
+    polarizability: 1.95
+    rotational-relaxation: 1.8
+  note: ATcT3E
+- name: OCX_111
+  composition: {C: 1, O: 1, X: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 2000.0]
+    data:
+    - [2.90999428E+00, 7.86563489E-03, -1.13899854E-05, 9.16448246E-09, -3.01000544E-12, -3.67595281E+04, -1.36337868E+01]
+    - [5.52988084E+00, -1.51352494E-03, 2.77222521E-06, -1.52990621E-09, 2.81445856E-13, -3.73952647E+04, -2.66913342E+01]
+- name: OX_111
+  composition: {O: 1, X: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 2000.0]
+    data:
+    - [-4.78747656E-01, 1.51163103E-02, -2.72714811E-05, 2.27788220E-08, -7.24231092E-12, -3.07613827E+04, 5.96105856E-01]
+    - [2.89482689E+00, -3.67789499E-04, 6.97988290E-07, -3.97248483E-10, 7.48154293E-14, -3.13854714E+04, -1.53122812E+01]
+- name: OCX_100
+  composition: {C: 1, O: 1, X: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 2000.0]
+    data:
+    - [3.42723161E+00, 5.48611161E-03, -6.29902421E-06, 4.29707114E-09, -1.30869881E-12, -3.69393475E+04, -1.54848996E+01]
+    - [5.59470038E+00, -1.35913188E-03, 2.49337545E-06, -1.38111491E-09, 2.54862314E-13, -3.75081601E+04, -2.65063613E+01]
+- name: OX_100
+  composition: {O: 1, X: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 2000.0]
+    data:
+    - [5.03939335E-01, 1.12035144E-02, -2.06564480E-05, 1.75188001E-08, -5.63223253E-12, -3.46653161E+04, -3.57292233E+00]
+    - [2.93156493E+00, -2.30016077E-04, 4.39395942E-07, -2.50634542E-10, 4.72630376E-14, -3.51016649E+04, -1.49534864E+01]
+- name: OCX_110
+  composition: {C: 1, O: 1, X: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 2000.0]
+    data:
+    - [2.85528595E+00, 8.14097430E-03, -1.22159161E-05, 1.00993053E-08, -3.36543293E-12, -3.71185926E+04, -1.27566343E+01]
+    - [5.50350832E+00, -1.56676455E-03, 2.86534065E-06, -1.57749947E-09, 2.89631494E-13, -3.77518428E+04, -2.59042938E+01]
+- name: OX_110
+  composition: {O: 1, X: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 2000.0]
+    data:
+    - [4.41172522E-02, 1.24720144E-02, -2.20480043E-05, 1.81496811E-08, -5.70878934E-12, -2.90587971E+04, -7.92359956E-01]
+    - [2.90283723E+00, -3.49097282E-04, 6.59501820E-07, -3.74729282E-10, 7.05066352E-14, -2.96008866E+04, -1.43423599E+01]
+- name: OCX_211
+  composition: {C: 1, O: 1, X: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 2000.0]
+    data:
+    - [2.84411871E+00, 8.22434967E-03, -1.25115306E-05, 1.04480084E-08, -3.49985319E-12, -3.63635684E+04, -1.10718903E+01]
+    - [5.49422791E+00, -1.58314029E-03, 2.89347098E-06, -1.59141636E-09, 2.91950750E-13, -3.69934377E+04, -2.42080163E+01]
+- name: OX_211
+  composition: {O: 1, X: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [298.0, 1000.0, 2000.0]
+    data:
+    - [-1.85579403E-02, 1.26342320E-02, -2.22077050E-05, 1.82053723E-08, -5.70855342E-12, -2.95160080E+04, -3.88372360E-01]
+    - [2.89858647E+00, -3.66686920E-04, 6.91987097E-07, -3.93031566E-10, 7.39329299E-14, -3.00728199E+04, -1.42343728E+01]
