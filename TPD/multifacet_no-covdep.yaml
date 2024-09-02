@@ -426,7 +426,7 @@ surface1-reactions:
   sticking-coefficient: {A: 0.23, b: 0.0, Ea: 0}
   id: Ni(111)
 - equation: site(111) + CO2 <=> CO2(111)  # Reaction 2
-  sticking-coefficient: {A: 1.7.0e-03, b: 0.0, Ea: 0}
+  sticking-coefficient: {A: 1.70e-03, b: 0.0, Ea: 0}
   id: Ni(111)
 - equation: site(111) + CO <=> OC(111)  # Reaction 3
   sticking-coefficient: {A: 0.72, b: 0.0, Ea: 0.0}
@@ -466,7 +466,7 @@ surface3-reactions:
   sticking-coefficient: {A: 0.63, b: 0.0, Ea: 0}
   id: Ni(100)
 - equation: site(100) + CO2 <=> CO2(100)  # Reaction 12
-  sticking-coefficient: {A: 1.7.0e-03, b: 0.0, Ea: 0}
+  sticking-coefficient: {A: 1.70e-03, b: 0.0, Ea: 0}
   id: Ni(100)
 - equation: site(100) + CO <=> OC(100)  # Reaction 13
   sticking-coefficient: {A: 0.75, b: 0.0, Ea: 0.0}
