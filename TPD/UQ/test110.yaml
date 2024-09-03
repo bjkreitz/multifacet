@@ -4,20 +4,20 @@ git-commit: 806842dac
 date: Mon Sep  2 22:06:21 2024
 phases:
   - kinetics: surface
-    name: surface1
+    name: surface4
     thermo: coverage-dependent-surface
     elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
-    species: [site(111), O(111), OC(111), C(111), CO2(111)]
-    site-density: 3.08e-08
+    species: [site(110), O(110), OC(110), C(110), CO2(110)]
+    site-density: 1.88e-08
     reference-state-coverage: 0.11
     state:
       T: 298.0
       P: 1.01325e+05
-      Y: {site(111): 1.0}
+      Y: {site(110): 1.0}
     adjacent-phases: [gas]
-  - kinetics: gas
+  - name: gas
+    kinetics: gas
     transport: mixture-averaged
-    name: gas
     reactions: none
     thermo: ideal-gas
     elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
@@ -27,7 +27,7 @@ phases:
       density: 1.633740017347092
       Y: {Ar: 1.0}
 species:
-  - name: site(111)
+  - name: site(110)
     composition: {}
     thermo:
       model: NASA7
@@ -35,56 +35,56 @@ species:
       data:
         - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
         - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-  - name: O(111)
+  - name: O(110)
     composition: {O: 1.0}
     thermo:
       model: NASA7
       temperature-ranges: [300.0, 1000.0, 2000.0]
       data:
-        - [-0.478747656, 0.0151163103, -2.72714811e-05, 2.2778822e-08,
-        -7.24231092e-12, -2.814719586878915e+04, 0.596105856]
-        - [2.89482689, -3.67789499e-04, 6.9798829e-07, -3.97248483e-10,
-        7.48154293e-14, -2.877128466878915e+04, -15.3122812]
+        - [0.0441172522, 0.0124720144, -2.20480043e-05, 1.81496811e-08,
+        -5.70878934e-12, -2.821927174363310e+04, -0.792359956]
+        - [2.90283723, -3.49097282e-04, 6.5950182e-07, -3.74729282e-10,
+        7.05066352e-14, -2.876136114363310e+04, -14.3423599]
     coverage-dependencies:
-      O(111):
+      O(110):
         model: polynomial
-        enthalpy-coefficients: [2.682292233028018e+07, 1.260098437530429e+08, 0.0, 0.0]
-        entropy-coefficients: [1823.572777130559, -2846.317297637645, 0.0, 0.0]
-  - name: OC(111)
+        enthalpy-coefficients: [-4.824266606165501e+06, 8.355629761878647e+07, 0.0, 0.0]
+        entropy-coefficients: [2981.396762610279, -4090.978082028344, 0.0, 0.0]
+  - name: OC(110)
     composition: {C: 1.0, O: 1.0}
     thermo:
       model: NASA7
       temperature-ranges: [300.0, 1000.0, 2000.0]
       data:
-        - [2.90999428, 7.86563489e-03, -1.13899854e-05, 9.16448246e-09,
-        -3.01000544e-12, -2.872405264574782e+04, -13.6337868]
-        - [5.52988084, -1.51352494e-03, 2.77222521e-06, -1.52990621e-09,
-        2.81445856e-13, -2.935978924574782e+04, -26.6913342]
+        - [2.85528595, 8.1409743e-03, -1.22159161e-05, 1.00993053e-08,
+        -3.36543293e-12, -2.993158921141645e+04, -12.7566343]
+        - [5.50350832, -1.56676455e-03, 2.86534065e-06, -1.57749947e-09,
+        2.89631494e-13, -3.056483941141645e+04, -25.9042938]
     coverage-dependencies:
-      OC(111):
+      OC(110):
         model: polynomial
-        enthalpy-coefficients: [-6.445220185837110e+07, 2.131360986603918e+08, 0.0, 0.0]
-        entropy-coefficients: [8181.956164056689, -2.977537349325347e+04, 0.0, 0.0]
-  - name: C(111)
+        enthalpy-coefficients: [-1.9297066424662e+05, 1.784978644281235e+07, 0.0, 0.0]
+        entropy-coefficients: [1.686563605515459e+04, -2.830879644497915e+04, 0.0, 0.0]
+  - name: C(110)
     composition: {C: 1.0}
     thermo:
       model: NASA7
       temperature-ranges: [300.0, 1000.0, 2000.0]
       data:
-        - [-1.63228182, 0.0191038084, -3.32205416e-05, 2.70171122e-08,
-        -8.42051429e-12, 1.897824100520645e+04, 5.71197317]
-        - [2.83838731, -5.90790351e-04, 1.11288128e-06, -6.31673142e-10,
-        1.18777752e-13, 1.811473480520645e+04, -15.560989]
-  - name: CO2(111)
+        - [-0.721719575, 0.0159851721, -2.86103462e-05, 2.37621721e-08,
+        -7.5235547e-12, 9440.200621030917, 1.66929615]
+        - [2.88363255, -4.11692019e-04, 7.79789121e-07, -4.43498364e-10,
+        8.3492472e-14, 8766.576961030918, -15.3670025]
+  - name: CO2(110)
     composition: {C: 1.0, O: 2.0}
     thermo:
       model: NASA7
       temperature-ranges: [300.0, 1000.0, 2000.0]
       data:
-        - [2.55250109, 0.0117194842, -1.40888049e-05, 9.66475492e-09,
-        -2.81819186e-12, -5.073570646478979e+04, -3.67254352]
-        - [7.01630854, -2.96289769e-03, 5.37651625e-06, -2.93589045e-09,
-        5.35706829e-13, -5.186738176478979e+04, -26.1959712]
+        - [1.82839576, 0.0151037235, -1.80030222e-05, 1.13242848e-08,
+        -2.98733954e-12, -5.443674025952855e+04, -2.14412576]
+        - [7.25247418, -2.59525685e-03, 4.76911326e-06, -2.65093887e-09,
+        4.90650581e-13, -5.580383235952855e+04, -29.5105092]
   - name: Ar
     composition: {Ar: 1.0}
     thermo:
@@ -166,21 +166,21 @@ species:
       rotational-relaxation: 3.8
     note: ATcT3E
 reactions:
-  - equation: O2 + 2 site(111) <=> 2 O(111)
-    sticking-coefficient: {A: 0.23, b: 0.0, Ea: 0.0}
-    id: Ni(111)
-  - equation: CO2 + site(111) <=> CO2(111)
-    sticking-coefficient: {A: 1.7e-03, b: 0.0, Ea: 0.0}
-    id: Ni(111)
-  - equation: CO + site(111) <=> OC(111)
-    sticking-coefficient: {A: 0.72, b: 0.0, Ea: 0.0}
-    id: Ni(111)
-  - equation: O(111) + OC(111) <=> CO2(111) + site(111)
-    rate-constant: {A: 1.005e+22, b: 0.0, Ea: 1.453274271600377e+08}
-    id: Ni(111)
-  - equation: OC(111) + site(111) <=> C(111) + O(111)
-    rate-constant: {A: 7.21e+19, b: 0.0, Ea: 3.004261835728794e+08}
-    id: Ni(111)
+  - equation: O2 + 2 site(110) <=> 2 O(110)
+    sticking-coefficient: {A: 0.78, b: 0.0, Ea: 0.0}
+    id: Ni(110)
+  - equation: CO2 + site(110) <=> CO2(110)
+    sticking-coefficient: {A: 0.14, b: 0.0, Ea: 0.0}
+    id: Ni(110)
+  - equation: CO + site(110) <=> OC(110)
+    sticking-coefficient: {A: 0.75, b: 0.0, Ea: 0.0}
+    id: Ni(110)
+  - equation: O(110) + OC(110) <=> CO2(110) + site(110)
+    rate-constant: {A: 1.074e+22, b: 0.0, Ea: 1.142443150066288e+08}
+    id: Ni(110)
+  - equation: OC(110) + site(110) <=> C(110) + O(110)
+    rate-constant: {A: 8.58e+19, b: 0.0, Ea: 2.065636008670857e+08}
+    id: Ni(110)
 input-files: [Multifacet_mechanism.cti]
 elements:
   - symbol: Ci

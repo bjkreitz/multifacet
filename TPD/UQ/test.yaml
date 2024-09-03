@@ -3,8 +3,6 @@ cantera-version: 3.0.0
 date: Thu, 26 Jan 2023 17:21:59 -0500
 input-files: [Multifacet_mechanism.cti]
 
-units: {length: cm, quantity: mol, activation-energy: kJ/mol}
-
 elements:
 - symbol: Ci
   atomic-weight: 13.003
@@ -41,7 +39,50 @@ phases:
     P: 1.01325e+05
   reference-state-coverage: 0.11
   adjacent-phases: [gas]
-  site-density: 3.08e-09
+  site-density: 3.08e-08
+- name: surface2
+  thermo: coverage-dependent-surface
+  elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
+  species:
+  - test211.yaml/species: [site(211), O(211), OC(211), C(211), CO2(211)]
+  kinetics: surface
+  reactions: 
+  - test211.yaml/reactions: declared-species
+  state:
+    T: 300.0
+    P: 1.01325e+05
+  reference-state-coverage: 0.11
+  adjacent-phases: [gas]
+  site-density: 3.26e-08
+- name: surface3
+  thermo: coverage-dependent-surface
+  elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
+  species:
+  - test100.yaml/species: [site(100), O(100), OC(100), C(100), CO2(100)]
+  kinetics: surface
+  reactions: 
+  - test100.yaml/reactions: declared-species
+  state:
+    T: 300.0
+    P: 1.01325e+05
+  reference-state-coverage: 0.11
+  adjacent-phases: [gas]
+  site-density: 2.67e-08
+- name: surface4
+  thermo: coverage-dependent-surface
+  elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
+  species:
+  - test110.yaml/species: [site(110), O(110), OC(110), C(110), CO2(110)]
+  kinetics: surface
+  reactions: 
+  - test110.yaml/reactions: declared-species
+  state:
+    T: 300.0
+    P: 1.01325e+05
+  reference-state-coverage: 0.11
+  adjacent-phases: [gas]
+  site-density: 1.88e-08
+
 
 species:
 - name: Ar
