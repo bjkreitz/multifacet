@@ -83,6 +83,55 @@ phases:
   adjacent-phases: [gas]
   site-density: 1.88e-08
 
+- name: edge12
+  thermo: edge
+  adjacent-phases: [gas, surface1, surface2]
+  elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
+  species: [(tpb)]
+  kinetics: edge
+  reactions: [edge12-reactions]
+  state:
+    T: 300.0
+    P: 1.01325e+05
+    coverages: {(tpb): 1.0}
+  site-density: 3.26e-098 
+- name: edge23
+  thermo: edge
+  adjacent-phases: [gas, surface2, surface3]
+  elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
+  species: [(tpb)]
+  kinetics: edge
+  reactions: [edge23-reactions]
+  state:
+    T: 300.0
+    P: 1.01325e+05
+    coverages: {(tpb): 1.0}
+  site-density: 3.26e-08
+- name: edge14
+  thermo: edge
+  adjacent-phases: [gas, surface1, surface4]
+  elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
+  species: [(tpb)]
+  kinetics: edge
+  reactions: [edge14-reactions]
+  state:
+    T: 300.0
+    P: 1.01325e+05
+    coverages: {(tpb): 1.0}
+  site-density: 1.88e-08
+- name: edge34
+  thermo: edge
+  adjacent-phases: [gas, surface3, surface4]
+  elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
+  species: [(tpb)]
+  kinetics: edge
+  reactions: [edge34-reactions]
+  state:
+    T: 300.0
+    P: 1.01325e+05
+    coverages: {(tpb): 1.0}
+  site-density: 1.88e-08
+
 
 species:
 - name: (tpb)

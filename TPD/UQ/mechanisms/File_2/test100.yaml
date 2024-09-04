@@ -1,10 +1,10 @@
 generator: YamlWriter
 cantera-version: 3.0.0
 git-commit: 806842dac
-date: Tue Sep  3 11:00:54 2024
+date: Wed Sep  4 09:33:00 2024
 phases:
-  - name: surface3
-    kinetics: surface
+  - kinetics: surface
+    name: surface3
     thermo: coverage-dependent-surface
     elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
     species: [site(100), O(100), OC(100), C(100), CO2(100)]
@@ -15,11 +15,11 @@ phases:
       P: 1.01325e+05
       Y: {site(100): 1.0}
     adjacent-phases: [gas]
-  - kinetics: gas
-    transport: mixture-averaged
+  - transport: mixture-averaged
+    kinetics: gas
     name: gas
-    thermo: ideal-gas
     reactions: none
+    thermo: ideal-gas
     elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
     species: [Ar, He, CO2, CO, O2]
     state:
