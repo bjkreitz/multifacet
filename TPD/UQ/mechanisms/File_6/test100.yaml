@@ -1,7 +1,7 @@
 generator: YamlWriter
 cantera-version: 3.0.0
 git-commit: 806842dac
-date: Tue Sep  3 11:00:54 2024
+date: Wed Sep  4 09:33:00 2024
 phases:
   - kinetics: surface
     name: surface3
@@ -18,8 +18,8 @@ phases:
   - name: gas
     kinetics: gas
     transport: mixture-averaged
-    reactions: none
     thermo: ideal-gas
+    reactions: none
     elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
     species: [Ar, He, CO2, CO, O2]
     state:
