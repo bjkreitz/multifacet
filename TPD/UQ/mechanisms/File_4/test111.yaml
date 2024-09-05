@@ -1,10 +1,10 @@
 generator: YamlWriter
 cantera-version: 3.0.0
 git-commit: 806842dac
-date: Wed Sep  4 09:33:00 2024
+date: Thu Sep  5 12:09:13 2024
 phases:
-  - kinetics: surface
-    name: surface1
+  - name: surface1
+    kinetics: surface
     thermo: coverage-dependent-surface
     elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
     species: [site(111), O(111), OC(111), C(111), CO2(111)]

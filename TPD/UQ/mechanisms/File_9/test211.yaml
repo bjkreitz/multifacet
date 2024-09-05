@@ -1,7 +1,7 @@
 generator: YamlWriter
 cantera-version: 3.0.0
 git-commit: 806842dac
-date: Wed Sep  4 09:33:00 2024
+date: Thu Sep  5 12:09:13 2024
 phases:
   - kinetics: surface
     name: surface2
@@ -15,9 +15,9 @@ phases:
       P: 1.01325e+05
       Y: {site(211): 1.0}
     adjacent-phases: [gas]
-  - transport: mixture-averaged
-    name: gas
+  - name: gas
     kinetics: gas
+    transport: mixture-averaged
     thermo: ideal-gas
     reactions: none
     elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
@@ -48,7 +48,7 @@ species:
     coverage-dependencies:
       O(211):
         model: polynomial
-        enthalpy-coefficients: [6.782918848268694e+07, 6.995186578939976e+07, 0.0, 0.0]
+        enthalpy-coefficients: [4.525162076583239e+07, 3.106827694370583e+07, 0.0, 0.0]
         entropy-coefficients: [-1466.577048274312, -8577.546025762260, 0.0, 0.0]
   - name: OC(211)
     composition: {C: 1.0, O: 1.0}
@@ -63,8 +63,8 @@ species:
     coverage-dependencies:
       OC(211):
         model: polynomial
-        enthalpy-coefficients: [-4.747078340466853e+07, 1.634461526168872e+08, 0.0, 0.0]
-        entropy-coefficients: [-6.001387658069883e+04, 3.742666033063195e+04, 0.0, 0.0]
+        enthalpy-coefficients: [-3.164718893644568e+07, 7.265345508885245e+07, 0.0, 0.0]
+        entropy-coefficients: [-3.685739687110443e+04, 1.278430650633858e+04, 0.0, 0.0]
   - name: C(211)
     composition: {C: 1.0}
     thermo:

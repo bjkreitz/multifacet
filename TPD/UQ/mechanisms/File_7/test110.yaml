@@ -1,10 +1,10 @@
 generator: YamlWriter
 cantera-version: 3.0.0
 git-commit: 806842dac
-date: Wed Sep  4 09:33:00 2024
+date: Thu Sep  5 12:09:13 2024
 phases:
-  - name: surface4
-    kinetics: surface
+  - kinetics: surface
+    name: surface4
     thermo: coverage-dependent-surface
     elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
     species: [site(110), O(110), OC(110), C(110), CO2(110)]
@@ -18,8 +18,8 @@ phases:
   - kinetics: gas
     transport: mixture-averaged
     name: gas
-    reactions: none
     thermo: ideal-gas
+    reactions: none
     elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
     species: [Ar, He, CO2, CO, O2]
     state:
