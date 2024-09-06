@@ -229,13 +229,13 @@ species:
 
 edge12-reactions:
 - equation: O(111) + site(211) <=> site(111) + O(211)  # Reaction 1 
-  rate-constant: {A: 9.5e16, b: 0, Ea: 45410702.2705477}
+  rate-constant: {A: 9.5e16, b: 0, Ea: 46610002.812296174}
   id: edge12
 - equation: OC(111) + site(211) <=> site(111) + OC(211)  # Reaction 2
-  rate-constant: {A: 3.5e16, b: 0, Ea: 13610827.514757693}
+  rate-constant: {A: 3.5e16, b: 0, Ea: 10016352.650780937}
   id: edge12
 - equation: C(111) + site(211) <=> site(111) + C(211)  # Reaction 3
-  rate-constant: {A: 1.22e17, b: 0, Ea: 34336837.68354494}
+  rate-constant: {A: 1.22e17, b: 0, Ea: 34610978.584343955}
   id: edge12
 - equation: CO2(111) + site(211) <=> site(111) + CO2(211)  # Reaction 4
   rate-constant: {A: 1e16, b: 0, Ea: 5} 
@@ -243,13 +243,13 @@ edge12-reactions:
     
 edge23-reactions:
 - equation: O(100) + site(211) <=> site(100) + O(211)  # Reaction 1
-  rate-constant: {A: 4.84e16, b: 0, Ea: 60339032.78773232}
+  rate-constant: {A: 4.84e16, b: 0, Ea: 62523263.59470726}
   id: edge23
 - equation: OC(100) + site(211) <=> site(100) + OC(211)  # Reaction 2
-  rate-constant: {A: 3.16e16, b: 0, Ea: 14432664.444027249}
+  rate-constant: {A: 3.16e16, b: 0, Ea: 6393812.024334874}
   id: edge23
 - equation: C(100) + site(211) <=> site(100) + C(211)  # Reaction 3
-  rate-constant: {A: 9.29e16, b: 0, Ea: 205189950.93355298}
+  rate-constant: {A: 9.29e16, b: 0, Ea: 183867587.98574913}
   id: edge23
 - equation: CO2(100) + site(211) <=> site(100) + CO2(211)  # Reaction 4
   rate-constant: {A: 1e16, b: 0, Ea: 5}
@@ -257,13 +257,13 @@ edge23-reactions:
     
 edge14-reactions:
 - equation: O(111) + site(110) <=> site(111) + O(110)  # Reaction 1
-  rate-constant: {A: 9.5e16, b: 0, Ea: 45410702.2705477}
+  rate-constant: {A: 9.5e16, b: 0, Ea: 46610002.812296174}
   id: edge14
 - equation: OC(111) + site(110) <=> site(111) + OC(110)  # Reaction 2
-  rate-constant: {A: 3.5e16, b: 0, Ea: 13610827.514757693}
+  rate-constant: {A: 3.5e16, b: 0, Ea: 10016352.650780937}
   id: edge14
 - equation: C(111) + site(110) <=> site(111) + C(110)  # Reaction 3
-  rate-constant: {A: 1.22e17, b: 0, Ea: 34336837.68354494}
+  rate-constant: {A: 1.22e17, b: 0, Ea: 34610978.584343955}
   id: edge14
 - equation: CO2(111) + site(110) <=> site(111) + CO2(110)  # Reaction 3
   rate-constant: {A: 1e16, b: 0, Ea: 5}
@@ -271,13 +271,13 @@ edge14-reactions:
   
 edge34-reactions:
 - equation: O(100) + site(110) <=> site(100) + O(110)  # Reaction 1
-  rate-constant: {A: 4.84e16, b: 0, Ea: 60339032.78773232}
+  rate-constant: {A: 4.84e16, b: 0, Ea: 62523263.59470726}
   id: edge34
 - equation: OC(100) + site(110) <=> site(100) + OC(110)  # Reaction 2
-  rate-constant: {A: 3.16e16, b: 0, Ea: 14432664.444027249}
+  rate-constant: {A: 3.16e16, b: 0, Ea: 6393812.024334874}
   id: edge34
 - equation: C(100) + site(110) <=> site(100) + C(110)  # Reaction 3
-  rate-constant: {A: 9.29e16, b: 0, Ea: 205189950.93355298}
+  rate-constant: {A: 9.29e16, b: 0, Ea: 183867587.98574913}
   id: edge34
 - equation: CO2(100) + site(110) <=> site(100) + CO2(110)  # Reaction 3
   rate-constant: {A: 1e16, b: 0, Ea: 5}
