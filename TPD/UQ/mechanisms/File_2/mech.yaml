@@ -30,10 +30,10 @@ phases:
   thermo: coverage-dependent-surface
   elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
   species:
-  - test111.yaml/species: [site(111), O(111), OC(111), C(111), CO2(111)]
+  - test111mod.yaml/species: [site(111), O(111), OC(111), C(111), CO2(111)]
   kinetics: surface
   reactions: 
-  - test111.yaml/reactions: declared-species
+  - test111mod.yaml/reactions: declared-species
   state:
     T: 300.0
     P: 1.01325e+05
@@ -44,10 +44,10 @@ phases:
   thermo: coverage-dependent-surface
   elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
   species:
-  - test211.yaml/species: [site(211), O(211), OC(211), C(211), CO2(211)]
+  - test211mod.yaml/species: [site(211), O(211), OC(211), C(211), CO2(211)]
   kinetics: surface
   reactions: 
-  - test211.yaml/reactions: declared-species
+  - test211mod.yaml/reactions: declared-species
   state:
     T: 300.0
     P: 1.01325e+05
@@ -58,10 +58,10 @@ phases:
   thermo: coverage-dependent-surface
   elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
   species:
-  - test100.yaml/species: [site(100), O(100), OC(100), C(100), CO2(100)]
+  - test100mod.yaml/species: [site(100), O(100), OC(100), C(100), CO2(100)]
   kinetics: surface
   reactions: 
-  - test100.yaml/reactions: declared-species
+  - test100mod.yaml/reactions: declared-species
   state:
     T: 300.0
     P: 1.01325e+05
@@ -72,10 +72,10 @@ phases:
   thermo: coverage-dependent-surface
   elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, Cl, X]
   species:
-  - test110.yaml/species: [site(110), O(110), OC(110), C(110), CO2(110)]
+  - test110mod.yaml/species: [site(110), O(110), OC(110), C(110), CO2(110)]
   kinetics: surface
   reactions: 
-  - test110.yaml/reactions: declared-species
+  - test110mod.yaml/reactions: declared-species
   state:
     T: 300.0
     P: 1.01325e+05
