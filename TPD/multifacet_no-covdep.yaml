@@ -283,7 +283,7 @@ species:
   coverage-dependencies:
     O(211): {model: polynomial,
              units: {energy: eV, quantity: molec},
-             enthalpy-coefficients: [0.469,0.322, 0.0, 0.0],
+             enthalpy-coefficients: [0.223,1.157, 0.0, 0.0],
              entropy-coefficients: [-1.52e-05, -8.89e-05, 0.0, 0.0]
             }
 - name: OC(211)
@@ -507,7 +507,7 @@ edge12-reactions:
   rate-constant: {A: 1.22e17, b: 0, Ea: 34.3}
   id: edge12
 - equation: CO2(111) + site(211) <=> site(111) + CO2(211)  # Reaction 4
-  rate-constant: {A: 1e16, b: 0, Ea: 5} 
+  rate-constant: {A: 1e16, b: 0, Ea: 0} 
   id: edge12
     
 edge23-reactions:
@@ -521,7 +521,7 @@ edge23-reactions:
   rate-constant: {A: 9.29e16, b: 0, Ea: 197.4}
   id: edge23
 - equation: CO2(100) + site(211) <=> site(100) + CO2(211)  # Reaction 4
-  rate-constant: {A: 1e16, b: 0, Ea: 5}
+  rate-constant: {A: 1e16, b: 0, Ea: 0}
   id: edge23
     
 edge14-reactions:
@@ -535,7 +535,7 @@ edge14-reactions:
   rate-constant: {A: 1.22e17, b: 0, Ea: 34.3}
   id: edge14
 - equation: CO2(111) + site(110) <=> site(111) + CO2(110)  # Reaction 3
-  rate-constant: {A: 1e16, b: 0, Ea: 5}
+  rate-constant: {A: 1e16, b: 0, Ea: 0}
   id: edge14
   
 edge34-reactions:
@@ -549,5 +549,5 @@ edge34-reactions:
   rate-constant: {A: 9.29e16, b: 0, Ea: 197.4}
   id: edge34
 - equation: CO2(100) + site(110) <=> site(100) + CO2(110)  # Reaction 3
-  rate-constant: {A: 1e16, b: 0, Ea: 5}
+  rate-constant: {A: 1e16, b: 0, Ea: 0}
   id: edge34
