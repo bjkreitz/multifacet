@@ -1,0 +1,154 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 7454025
+##  Job Name : tunel
+##  Nodelist : node1320
+##      CPUs : 10
+##  Mem/Node : 61440 MB
+## Directory : /oscar/scratch/bkreitz1/multifacet
+##   Job Started : Fri Dec 20 07:58:46 AM EST 2024
+###############################################################################
+
+    Copy/Paste this in your local terminal to ssh tunnel with remote
+    -----------------------------------------------------------------
+    ssh -N -L 8153:172.20.209.20:8153 bkreitz1@sshcampus.ccv.brown.edu
+    -----------------------------------------------------------------
+    Then open a browser on your local machine to the following address
+    ------------------------------------------------------------------
+    localhost:8153  (prefix w/ https:// if using password)
+    ------------------------------------------------------------------
+    
+[I 2024-12-20 07:58:50.738 ServerApp] Extension package jupyter_lsp took 0.1031s to import
+[W 2024-12-20 07:58:50.738 ServerApp] A `_jupyter_server_extension_points` function was not found in jupyter_lsp. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[W 2024-12-20 07:58:50.969 ServerApp] A `_jupyter_server_extension_points` function was not found in notebook_shim. Instead, a `_jupyter_server_extension_paths` function was found and will be used for now. This function name will be deprecated in future releases of Jupyter Server.
+[I 2024-12-20 07:58:50.971 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-12-20 07:58:50.977 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2024-12-20 07:58:50.982 ServerApp] jupyterlab | extension was successfully linked.
+[I 2024-12-20 07:58:50.987 ServerApp] notebook | extension was successfully linked.
+[I 2024-12-20 07:58:52.115 ServerApp] notebook_shim | extension was successfully linked.
+[I 2024-12-20 07:58:52.202 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-20 07:58:52.204 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-12-20 07:58:52.232 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-12-20 07:58:52.249 LabApp] JupyterLab extension loaded from /users/bkreitz1/.conda/envs/ct-env/lib/python3.10/site-packages/jupyterlab
+[I 2024-12-20 07:58:52.249 LabApp] JupyterLab application directory is /oscar/home/bkreitz1/.conda/envs/ct-env/share/jupyter/lab
+[I 2024-12-20 07:58:52.254 LabApp] Extension Manager is 'pypi'.
+[I 2024-12-20 07:58:52.256 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-20 07:58:52.259 ServerApp] notebook | extension was successfully loaded.
+[I 2024-12-20 07:58:52.260 ServerApp] Serving notebooks from local directory: /oscar/scratch/bkreitz1/multifacet
+[I 2024-12-20 07:58:52.260 ServerApp] Jupyter Server 2.14.1 is running at:
+[I 2024-12-20 07:58:52.260 ServerApp] http://172.20.209.20:8153/tree?token=abae7674687abda9b850a26cfb6b077c87c0be42c9fcdf1b
+[I 2024-12-20 07:58:52.260 ServerApp]     http://127.0.0.1:8153/tree?token=abae7674687abda9b850a26cfb6b077c87c0be42c9fcdf1b
+[I 2024-12-20 07:58:52.260 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2024-12-20 07:58:52.274 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///oscar/home/bkreitz1/.local/share/jupyter/runtime/jpserver-206002-open.html
+    Or copy and paste one of these URLs:
+        http://172.20.209.20:8153/tree?token=abae7674687abda9b850a26cfb6b077c87c0be42c9fcdf1b
+        http://127.0.0.1:8153/tree?token=abae7674687abda9b850a26cfb6b077c87c0be42c9fcdf1b
+[I 2024-12-20 07:58:52.370 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2024-12-20 08:00:09.163 ServerApp] Kernel started: cd295d9a-8cf1-4633-a094-32b3a3378ce1
+[I 2024-12-20 08:00:10.236 ServerApp] Connecting to kernel cd295d9a-8cf1-4633-a094-32b3a3378ce1.
+[I 2024-12-20 08:02:09.085 ServerApp] Saving file at /TPD/UQ/bee_mechanisms.ipynb
+[I 2024-12-20 08:04:09.236 ServerApp] Saving file at /TPD/UQ/bee_mechanisms.ipynb
+[I 2024-12-20 08:08:09.335 ServerApp] Saving file at /TPD/UQ/bee_mechanisms.ipynb
+[I 2024-12-20 08:12:09.544 ServerApp] Saving file at /TPD/UQ/bee_mechanisms.ipynb
+[I 2024-12-20 08:14:09.657 ServerApp] Saving file at /TPD/UQ/bee_mechanisms.ipynb
+[I 2024-12-20 08:18:09.764 ServerApp] Saving file at /TPD/UQ/bee_mechanisms.ipynb
+[I 2024-12-20 08:20:09.856 ServerApp] Saving file at /TPD/UQ/bee_mechanisms.ipynb
+[I 2024-12-20 08:24:10.175 ServerApp] Saving file at /TPD/UQ/bee_mechanisms.ipynb
+[I 2024-12-20 08:26:10.374 ServerApp] Saving file at /TPD/UQ/bee_mechanisms.ipynb
+[I 2024-12-20 08:28:10.479 ServerApp] Saving file at /TPD/UQ/bee_mechanisms.ipynb
+[I 2024-12-20 08:30:10.571 ServerApp] Saving file at /TPD/UQ/bee_mechanisms.ipynb
+[I 2024-12-20 08:32:10.670 ServerApp] Saving file at /TPD/UQ/bee_mechanisms.ipynb
+[I 2024-12-20 08:32:57.455 ServerApp] Starting buffering for cd295d9a-8cf1-4633-a094-32b3a3378ce1:bf770875-9b24-46df-bf82-b9d8bfaf5b59
+[I 2024-12-20 09:35:55.485 ServerApp] Kernel started: 59174c68-bce3-4dbe-b685-5e266c4e8671
+[I 2024-12-20 09:35:56.673 ServerApp] Connecting to kernel 59174c68-bce3-4dbe-b685-5e266c4e8671.
+[I 2024-12-20 09:35:58.411 ServerApp] Kernel started: 145aa2d8-5a80-4421-817b-79c6a0ec8676
+[I 2024-12-20 09:35:59.241 ServerApp] Connecting to kernel 145aa2d8-5a80-4421-817b-79c6a0ec8676.
+[I 2024-12-20 09:39:55.435 ServerApp] Saving file at /TPD/UQ/adjust_edge.ipynb
+[I 2024-12-20 09:42:01.136 ServerApp] Saving file at /TPD/UQ/adjust_covdep.ipynb
+[I 2024-12-20 09:43:45.684 ServerApp] Kernel started: a39f7009-1297-430c-aaa3-c095a6cbb60e
+[I 2024-12-20 09:43:46.816 ServerApp] Connecting to kernel a39f7009-1297-430c-aaa3-c095a6cbb60e.
+[I 2024-12-20 09:45:45.600 ServerApp] Saving file at /TPD/tpd_cases.ipynb
+[I 2024-12-20 09:47:45.697 ServerApp] Saving file at /TPD/tpd_cases.ipynb
+[I 2024-12-20 09:48:45.415 ServerApp] Kernel started: 522c32cc-bb42-4951-ae4d-5d1d1f7bda91
+[I 2024-12-20 09:48:46.537 ServerApp] Connecting to kernel 522c32cc-bb42-4951-ae4d-5d1d1f7bda91.
+[I 2024-12-20 09:49:45.805 ServerApp] Saving file at /TPD/tpd_cases.ipynb
+[I 2024-12-20 09:51:46.142 ServerApp] Saving file at /TPD/tpd_cases.ipynb
+[I 2024-12-20 09:53:47.146 ServerApp] Saving file at /TPD/tpd_cases.ipynb
+[I 2024-12-20 09:54:47.164 ServerApp] Saving file at /TPD/Plot_tpd_cases.ipynb
+[I 2024-12-20 09:56:05.136 ServerApp] Saving file at /TPD/UQ/adjust_covdep.ipynb
+[I 2024-12-20 09:57:49.147 ServerApp] Saving file at /TPD/tpd_cases.ipynb
+[I 2024-12-20 09:58:47.472 ServerApp] Starting buffering for 59174c68-bce3-4dbe-b685-5e266c4e8671:66a38795-9b4b-437e-b7a3-b9542f283904
+[I 2024-12-20 09:58:47.472 ServerApp] Starting buffering for 145aa2d8-5a80-4421-817b-79c6a0ec8676:ee3cd887-25cf-4930-a1fb-15e138e18a79
+[I 2024-12-20 09:58:47.472 ServerApp] Starting buffering for a39f7009-1297-430c-aaa3-c095a6cbb60e:4bc04f68-9ede-47bc-a1de-4f7d62e801dd
+[I 2024-12-20 09:58:47.473 ServerApp] Starting buffering for 522c32cc-bb42-4951-ae4d-5d1d1f7bda91:ad21f2f8-fec2-4e09-9111-267f15b02776
+[I 2024-12-20 09:58:47.516 ServerApp] Connecting to kernel 522c32cc-bb42-4951-ae4d-5d1d1f7bda91.
+[I 2024-12-20 09:58:47.516 ServerApp] Restoring connection for 522c32cc-bb42-4951-ae4d-5d1d1f7bda91:ad21f2f8-fec2-4e09-9111-267f15b02776
+[I 2024-12-20 09:58:47.573 ServerApp] Connecting to kernel a39f7009-1297-430c-aaa3-c095a6cbb60e.
+[I 2024-12-20 09:58:47.573 ServerApp] Restoring connection for a39f7009-1297-430c-aaa3-c095a6cbb60e:4bc04f68-9ede-47bc-a1de-4f7d62e801dd
+[I 2024-12-20 09:58:47.607 ServerApp] Connecting to kernel 145aa2d8-5a80-4421-817b-79c6a0ec8676.
+[I 2024-12-20 09:58:47.607 ServerApp] Restoring connection for 145aa2d8-5a80-4421-817b-79c6a0ec8676:ee3cd887-25cf-4930-a1fb-15e138e18a79
+[I 2024-12-20 09:58:47.636 ServerApp] Connecting to kernel 59174c68-bce3-4dbe-b685-5e266c4e8671.
+[I 2024-12-20 09:58:47.636 ServerApp] Restoring connection for 59174c68-bce3-4dbe-b685-5e266c4e8671:66a38795-9b4b-437e-b7a3-b9542f283904
+[I 2024-12-20 09:58:48.204 ServerApp] Saving file at /TPD/Plot_tpd_cases.ipynb
+[W 2024-12-20 10:00:17.518 ServerApp] WebSocket ping timeout after 90001 ms.
+[W 2024-12-20 10:00:17.574 ServerApp] WebSocket ping timeout after 90000 ms.
+[W 2024-12-20 10:00:17.607 ServerApp] WebSocket ping timeout after 90000 ms.
+[W 2024-12-20 10:00:17.636 ServerApp] WebSocket ping timeout after 90000 ms.
+[I 2024-12-20 10:00:22.520 ServerApp] Starting buffering for 522c32cc-bb42-4951-ae4d-5d1d1f7bda91:ad21f2f8-fec2-4e09-9111-267f15b02776
+[I 2024-12-20 10:00:22.575 ServerApp] Starting buffering for a39f7009-1297-430c-aaa3-c095a6cbb60e:4bc04f68-9ede-47bc-a1de-4f7d62e801dd
+[I 2024-12-20 10:00:22.609 ServerApp] Starting buffering for 145aa2d8-5a80-4421-817b-79c6a0ec8676:ee3cd887-25cf-4930-a1fb-15e138e18a79
+[I 2024-12-20 10:00:22.636 ServerApp] Starting buffering for 59174c68-bce3-4dbe-b685-5e266c4e8671:66a38795-9b4b-437e-b7a3-b9542f283904
+[I 2024-12-20 10:02:49.182 ServerApp] Connecting to kernel 145aa2d8-5a80-4421-817b-79c6a0ec8676.
+[I 2024-12-20 10:02:49.182 ServerApp] Restoring connection for 145aa2d8-5a80-4421-817b-79c6a0ec8676:ee3cd887-25cf-4930-a1fb-15e138e18a79
+[I 2024-12-20 10:02:49.215 ServerApp] Connecting to kernel 522c32cc-bb42-4951-ae4d-5d1d1f7bda91.
+[I 2024-12-20 10:02:49.215 ServerApp] Restoring connection for 522c32cc-bb42-4951-ae4d-5d1d1f7bda91:ad21f2f8-fec2-4e09-9111-267f15b02776
+[I 2024-12-20 10:02:49.249 ServerApp] Connecting to kernel a39f7009-1297-430c-aaa3-c095a6cbb60e.
+[I 2024-12-20 10:02:49.249 ServerApp] Restoring connection for a39f7009-1297-430c-aaa3-c095a6cbb60e:4bc04f68-9ede-47bc-a1de-4f7d62e801dd
+[I 2024-12-20 10:02:49.282 ServerApp] Connecting to kernel 59174c68-bce3-4dbe-b685-5e266c4e8671.
+[I 2024-12-20 10:02:49.282 ServerApp] Restoring connection for 59174c68-bce3-4dbe-b685-5e266c4e8671:66a38795-9b4b-437e-b7a3-b9542f283904
+[I 2024-12-20 11:12:01.285 ServerApp] Starting buffering for 145aa2d8-5a80-4421-817b-79c6a0ec8676:ee3cd887-25cf-4930-a1fb-15e138e18a79
+[I 2024-12-20 11:12:01.287 ServerApp] Starting buffering for 522c32cc-bb42-4951-ae4d-5d1d1f7bda91:ad21f2f8-fec2-4e09-9111-267f15b02776
+[I 2024-12-20 11:12:01.287 ServerApp] Starting buffering for a39f7009-1297-430c-aaa3-c095a6cbb60e:4bc04f68-9ede-47bc-a1de-4f7d62e801dd
+[I 2024-12-20 11:12:01.287 ServerApp] Starting buffering for 59174c68-bce3-4dbe-b685-5e266c4e8671:66a38795-9b4b-437e-b7a3-b9542f283904
+[I 2024-12-20 11:12:01.313 ServerApp] Connecting to kernel a39f7009-1297-430c-aaa3-c095a6cbb60e.
+[I 2024-12-20 11:12:01.313 ServerApp] Restoring connection for a39f7009-1297-430c-aaa3-c095a6cbb60e:4bc04f68-9ede-47bc-a1de-4f7d62e801dd
+[I 2024-12-20 11:12:01.357 ServerApp] Connecting to kernel 522c32cc-bb42-4951-ae4d-5d1d1f7bda91.
+[I 2024-12-20 11:12:01.357 ServerApp] Restoring connection for 522c32cc-bb42-4951-ae4d-5d1d1f7bda91:ad21f2f8-fec2-4e09-9111-267f15b02776
+[I 2024-12-20 11:12:01.396 ServerApp] Connecting to kernel 145aa2d8-5a80-4421-817b-79c6a0ec8676.
+[I 2024-12-20 11:12:01.396 ServerApp] Restoring connection for 145aa2d8-5a80-4421-817b-79c6a0ec8676:ee3cd887-25cf-4930-a1fb-15e138e18a79
+[I 2024-12-20 11:12:01.426 ServerApp] Connecting to kernel 59174c68-bce3-4dbe-b685-5e266c4e8671.
+[I 2024-12-20 11:12:01.427 ServerApp] Restoring connection for 59174c68-bce3-4dbe-b685-5e266c4e8671:66a38795-9b4b-437e-b7a3-b9542f283904
+[W 2024-12-20 11:13:31.314 ServerApp] WebSocket ping timeout after 90000 ms.
+[W 2024-12-20 11:13:31.357 ServerApp] WebSocket ping timeout after 90000 ms.
+[W 2024-12-20 11:13:31.397 ServerApp] WebSocket ping timeout after 90000 ms.
+[W 2024-12-20 11:13:31.427 ServerApp] WebSocket ping timeout after 90000 ms.
+[I 2024-12-20 11:13:36.315 ServerApp] Starting buffering for a39f7009-1297-430c-aaa3-c095a6cbb60e:4bc04f68-9ede-47bc-a1de-4f7d62e801dd
+[I 2024-12-20 11:13:36.358 ServerApp] Starting buffering for 522c32cc-bb42-4951-ae4d-5d1d1f7bda91:ad21f2f8-fec2-4e09-9111-267f15b02776
+[I 2024-12-20 11:13:36.397 ServerApp] Starting buffering for 145aa2d8-5a80-4421-817b-79c6a0ec8676:ee3cd887-25cf-4930-a1fb-15e138e18a79
+[I 2024-12-20 11:13:36.428 ServerApp] Starting buffering for 59174c68-bce3-4dbe-b685-5e266c4e8671:66a38795-9b4b-437e-b7a3-b9542f283904
+[I 2024-12-20 11:26:02.245 ServerApp] Connecting to kernel a39f7009-1297-430c-aaa3-c095a6cbb60e.
+[I 2024-12-20 11:26:02.245 ServerApp] Restoring connection for a39f7009-1297-430c-aaa3-c095a6cbb60e:4bc04f68-9ede-47bc-a1de-4f7d62e801dd
+[I 2024-12-20 11:26:02.304 ServerApp] Connecting to kernel 522c32cc-bb42-4951-ae4d-5d1d1f7bda91.
+[I 2024-12-20 11:26:02.304 ServerApp] Restoring connection for 522c32cc-bb42-4951-ae4d-5d1d1f7bda91:ad21f2f8-fec2-4e09-9111-267f15b02776
+[I 2024-12-20 11:26:02.352 ServerApp] Connecting to kernel 145aa2d8-5a80-4421-817b-79c6a0ec8676.
+[I 2024-12-20 11:26:02.352 ServerApp] Restoring connection for 145aa2d8-5a80-4421-817b-79c6a0ec8676:ee3cd887-25cf-4930-a1fb-15e138e18a79
+[I 2024-12-20 11:26:02.388 ServerApp] Connecting to kernel 59174c68-bce3-4dbe-b685-5e266c4e8671.
+[I 2024-12-20 11:26:02.388 ServerApp] Restoring connection for 59174c68-bce3-4dbe-b685-5e266c4e8671:66a38795-9b4b-437e-b7a3-b9542f283904
+[I 2024-12-20 12:27:34.987 ServerApp] Starting buffering for 59174c68-bce3-4dbe-b685-5e266c4e8671:66a38795-9b4b-437e-b7a3-b9542f283904
+[I 2024-12-20 12:27:36.600 ServerApp] Starting buffering for 145aa2d8-5a80-4421-817b-79c6a0ec8676:ee3cd887-25cf-4930-a1fb-15e138e18a79
+[I 2024-12-20 12:27:37.403 ServerApp] Starting buffering for a39f7009-1297-430c-aaa3-c095a6cbb60e:4bc04f68-9ede-47bc-a1de-4f7d62e801dd
+[I 2024-12-20 12:27:38.264 ServerApp] Starting buffering for 522c32cc-bb42-4951-ae4d-5d1d1f7bda91:ad21f2f8-fec2-4e09-9111-267f15b02776
+[I 2024-12-20 14:07:14.796 ServerApp] Connecting to kernel a39f7009-1297-430c-aaa3-c095a6cbb60e.
+[I 2024-12-20 14:09:15.235 ServerApp] Saving file at /TPD/tpd_cases.ipynb
+[I 2024-12-20 14:11:16.529 ServerApp] Saving file at /TPD/tpd_cases.ipynb
+[I 2024-12-20 14:14:27.377 ServerApp] Connecting to kernel 522c32cc-bb42-4951-ae4d-5d1d1f7bda91.
+[I 2024-12-20 14:16:27.293 ServerApp] Saving file at /TPD/Plot_tpd_cases.ipynb
+[I 2024-12-20 14:17:17.808 ServerApp] Saving file at /TPD/tpd_cases.ipynb
+[I 2024-12-20 14:18:27.479 ServerApp] Saving file at /TPD/Plot_tpd_cases.ipynb
+[I 2024-12-20 14:19:18.164 ServerApp] Saving file at /TPD/tpd_cases.ipynb
+[I 2024-12-20 14:20:27.593 ServerApp] Saving file at /TPD/Plot_tpd_cases.ipynb
+[I 2024-12-20 16:26:12.891 ServerApp] Connecting to kernel 145aa2d8-5a80-4421-817b-79c6a0ec8676.
+[I 2024-12-20 16:26:14.674 ServerApp] Connecting to kernel cd295d9a-8cf1-4633-a094-32b3a3378ce1.
+[I 2024-12-20 16:26:19.541 ServerApp] Connecting to kernel 59174c68-bce3-4dbe-b685-5e266c4e8671.
