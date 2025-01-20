@@ -283,7 +283,7 @@ species:
   coverage-dependencies:
     O(211): {model: polynomial,
              units: {energy: eV, quantity: molec},
-             enthalpy-coefficients: [0.469,0.322, 0.0, 0.0],
+             enthalpy-coefficients: [0.223,1.157, 0.0, 0.0],
              entropy-coefficients: [-1.52e-05, -8.89e-05, 0.0, 0.0]
             }
 - name: OC(211)
